@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -25,189 +25,268 @@
         <nav>
             <span id="logo"> <a href="#">Chhavi</a> </span>
             <div id="header-items">
-                <span> <a href="#">About</a> </span>
-                <span> <a href="#">Projects</a> </span>
-                <span> <a href="#">CV</a> </span>
-                <span> <a href="#">Contact</a> </span>
+                <span> <a href="#info">About</a> </span>
+                <span> <a href="#projects">Projects</a> </span>
+                <span> <a href="docs/Chhavi_Arora_Resume.pdf">CV</a> </span>
+                <span> <a href="#contact">Contact</a> </span>
             </div>
         </nav>
     </header>
     <div id="main-content">
         <div class="container">
+            <div id="bg"></div>
             <div id="intro">
-                <span><button><i class="far fa-lightbulb"></i></button></span>
+                <span><button id="dark" style="border: 0ch; background-color: transparent;"><i
+                            class="far fa-lightbulb"></i></button></span>
                 <div id="name">Chhavi Arora</div>
                 <div id="type">Type writing effect</div>
-                <div>
+                <div style="width: 25%;">
                     <hr>
                     <div id="social">
-                        <a href="github.com"><i class="fab fa-github-square"></i></a>
-                        <a href=""><i class="fab fa-linkedin"></i></a>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""></a>
+                        <a href="https://github.com/ChhaviArora1401"><i class="fab fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/chhaviarora1401/"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto: chhaviarora111@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-slack"></i></a>
                     </div>
                     <hr style="margin-top: 1%;">
                 </div>
 
                 <div id="def">
-                    Hello! My name is Chhavi, front end developer.
+                    I am a front end developer.<i class="fas fa-code"></i><i class="fas fa-laptop-code"></i>
                 </div>
-                <span class="t"><button><i class="fas fa-arrow-up"></i></button></span>
+                <span class="t"><a href="#intro"><button><i class="fas fa-arrow-up"></i></button></a></span>
             </div>
         </div>
         <div class="container">
             <div id="info">
                 <div id="img1">
-                    <img src="images/" height="500px" width="300px">
+                    <img src="images/a.jpg" height="500px" width="400px">
                 </div>
+                <div
+                    style="color: transparent; border-right: 6px solid rgb(122, 118, 118); height: 300px; margin-top: auto; margin-bottom: auto; margin-left: 10%;">
+                    ..</div>
                 <div id="text">
                     <div>
-                        <span class="h">About ME</span> <br>
-                        A self-taught front end developer who loves coding. <br>
-                        My front end journey started since March 2021. <br>
-                        I try to create new things on my own from scratch and also like to learn from good
-                        developers.<br>
-                        one more line
+                        <span class="h"> <span style="color: blueviolet;">About</span> ME</span>
+                        <p>A self-taught front end developer who loves coding. <br>
+                            My front end journey started since March 2021. <br>
+                            I try to create new things on my own from scratch and also like to learn from good
+                            developers.<br>
+                            one more line</p>
                     </div>
                     <div>
                         <span class="h">Current Tech Stacks</span> <br>
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3"></i>
-                        <i class="fab fa-js-square"></i>
-                        <i class="fab fa-github-square"></i>
-                        <i class="fab fa-git-alt"></i>
+                        <p style="font-size: 2em; margin-top: 10px;
+                        margin-bottom: 15px;"><i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-github-square"></i>
+                            <i class="fab fa-git-alt"></i>
+                        </p>
                     </div>
                     <div>
                         <span class="h">Tech Stacks Learning</span> <br>
-                        <i class="fab fa-jsfiddle"></i>
-                        <i class="fab fa-codepen"></i>
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-npm"></i>
-                        <i class="fas fa-terminal"></i>
-                        <i class="fab fa-node"></i>
+                        <p style="font-size: 2em; margin-top: 10px;
+                        margin-bottom: 15px;">
+                            <i class="fab fa-jsfiddle"></i>
+                            <i class="fab fa-codepen"></i>
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-npm"></i>
+                            <i class="fas fa-terminal"></i>
+                            <i class="fab fa-node"></i>
+                        </p>
 
                     </div>
                     <div>
-                        <span class="h">Certifications</span> <br> <a
-                            href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
+                        <span class="h"><i class="fas fa-certificate"></i> Certifications</span> <br>
+                        <p><a style="color: rgb(122, 118, 118);"
+                                href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
                         link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">HTML,
-                            CSS, and Javascript for Web Developers by Coursera</a>
+                                CSS, and Javascript for Web Developers by Coursera</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="continer">
+        <div class="container">
             <div id="projects">
-                <div id="p-title">Projects</div>
-                <div id="all">
-                    <div class="row">
-                        <div class="wh">
-                            <div class="wt">
-                                <h3>Weeezaa Board</h3>
-                            </div>
-                            <a href="https://chhaviarora1401.github.io/Weeezaa-Board/"></a>
+                <div id="p-title"><i class="far fa-file-code"></i><i class="fas fa-file-code"></i>Projects</div>
+                <div class="table">
+                    <div id="all">
+                        <div style="background-image: url(images/board.jpg)" class="wh">
+                            <a href="https://chhaviarora1401.github.io/Weeezaa-Board/">
+                                <div class="wt">
+                                    <h3>Weeezaa Board</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" wh">
+                            <a href="">
+                                <div class="wt">
+                                    <h3>Restraunt Site</h3>
+                                </div>
+                            </a>
                         </div>
                         <div class="wh">
-                            <div class="wt">
-                                <h3>Weeezaa Board</h3>
-                            </div>
-                            <a href="https://chhaviarora1401.github.io/Weeezaa-Board/"></a>
+                            <a href="">
+                                <div class="wt">
+                                    <h3>Imgur Clone</h3>
+                                </div>
+                            </a>
                         </div>
                         <div class="wh">
-                            <div class="wt">
-                                <h3>Weeezaa Board</h3>
-                            </div>
-                            <a href="https://chhaviarora1401.github.io/Weeezaa-Board/"></a>
+                            <a href="">
+                                <div class="wt">
+                                    <h3>Auto Background color change</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wh">
+                            <a href="">
+                                <div class="wt">
+                                    <h3>Calculator</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wh">
+                            <a href="">
+                                <div class="wt">
+                                    <h3>Sign up Form</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wh">
+                            <a href="">
+                                <div class="wt">
+                                    <h3>.</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wh">
+                            <a href="">
+                                <div class="wt">
+                                    <h3>.</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wh">
+                            <a href="">
+                                <div class="wt">
+                                    <h3>.</h3>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <!-- <div id="g"><a href="https://github.com/ChhaviArora1401?tab=repositories">See more on Github.</a> -->
+                    <div style="padding-top:50px; text-align: center;" id=" g"><a
+                            href="https://github.com/ChhaviArora1401?tab=repositories">See more on Github.</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div id="edu">
-                <i class="fas fa-university"></i>Education
+                <h1><i class="fas fa-university"></i>Education</h1>
                 <div class="timeline">
                     <div class="contain left">
                         <div class="content">
-                            <h2>2017</h2>
-                            <p>10</p>
+                            <span class="heading"><i class="fas fa-school"></i>10<sup>th</sup></span>
+                            <small>2016-2017</small>
+                            <p>10th standard.</p>
                         </div>
                     </div>
                     <i class="fas fa-dot-circle  ic"></i>
                     <div class="line">..</div>
                     <div class="contain right">
                         <div class="content">
-                            <h2>2019</h2>
-                            <p>L</p>
+                            <span class="heading"><i class="fas fa-school"></i>10<sup>th</sup></span>
+                            <small>2018-2019</small>
+                            <p>Completed XII with Commerce Stream.</p>
                         </div>
                     </div>
                     <i class="fas fa-dot-circle ic"></i>
+
+                    <div class="line">..</div>
+                    <div class="contain left">
+                        <div class="content">
+                            <span class="heading"><i class="fas fa-graduation-cap"></i>Graduation</span>
+                            <small>2019-2022</small>
+                            <p>Vivekananda Institute of Professional Studies <br>
+                                <span style="font-size: 16px;">Bacherlors of Computer Application</span>
+                            </p>
+                        </div>
+                    </div>
+                    <i class="fas fa-dot-circle  ic"></i>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div id="work">
-                <i class="fas fa-university"></i>work
+                <h1><i class="fas fa-university"></i>work</h1>
                 <div class="timeline">
                     <div class="contain left">
                         <div class="content">
-                            <h2>2017</h2>
-                            <p>10</p>
+                            <span class="heading"><i class="fas fa-school"></i>10<sup>th</sup></span>
+                            <small>2016-2017</small>
+                            <p>10th standard.</p>
                         </div>
                     </div>
                     <i class="fas fa-dot-circle  ic"></i>
                     <div class="line">..</div>
                     <div class="contain right">
                         <div class="content">
-                            <h2>2019</h2>
-                            <p>L</p>
+                            <span class="heading"><i class="fas fa-school"></i>10<sup>th</sup></span>
+                            <small>2018-2019</small>
+                            <p>Completed XII with Commerce Stream.</p>
                         </div>
                     </div>
                     <i class="fas fa-dot-circle ic"></i>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div class="testimonials">
+                <h1>Testimonials</h1>
                 <div>
-                    <img src="">
-                </div>
-                <div>
-                    drfghjklkjhyfrdesdrfhjkjiuhytfghjkiuygvbhjiuytfgvbhjiuyvbjkiugvbhjiugvbjiugvbjug
+                    v
                 </div>
 
             </div>
-            <div class="contact">
+        </div>
+        <div class="container">
+            <div id="contact">
                 <div>
                     <h1>Contact Form</h1>
                     <form>
                         <div>
-                            <label>Name: </label> <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Name">
                         </div>
                         <div>
-                            <label>E-mail Address: </label> <input type="text" placeholder="E-mail address">
+                            <input type="text" placeholder="E-mail address">
                         </div>
                         <div>
-                            <label>Subject: </labe;> <input type="text" placeholder="Subject">
+                            <input type="text" placeholder="Subject">
                         </div>
-                        <label>Message:</label>
+
                         <textarea name="comments" rows="4" cols="24" placeholder="Message"></textarea>
                         <br>
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Submit" /><i class="fas fa-paper-plane"></i>
                     </form>
                 </div>
                 <div id="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112173.02287907693!2d77.1387733802525!3d28.527484973572147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1625437807192!5m2!1sen!2sin"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <i class="fas fa-location-arrow"></i>
+                    <!-- <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112173.02287907693!2d77.1387733802525!3d28.527484973572147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1625437807192!5m2!1sen!2sin"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
                 </div>
             </div>
-
         </div>
+
 
 
         <footer>
             <div>
                 <div>
                     Ready to make something awesome? <br>
-                    Let's get on a call.
+                    Let's get on a call.<i class="fas fa-hands-helping"></i>
                 </div>
                 <div id="f">
                     <span>
