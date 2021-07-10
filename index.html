@@ -17,11 +17,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
 </head>
 
 <body>
-
+    <div id="overlay-preload"><span>Welcome</span></div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <header id="navbar">
         <nav>
             <span id="logo" style="padding-left: 10px;"> <a href="#">Chhavi</a> </span>
@@ -146,69 +148,146 @@
         <div class="container">
             <div id="projects">
                 <div id="p-title"><i class="far fa-file-code"></i> Projects</div>
-                <div id="all">
-                    <div style="background-image: url(images/board.jpg);" class="wh">
-                        <a href="https://chhaviarora1401.github.io/Weeezaa-Board/" target="_blank">
-                            <div class="wt">
-                                <h3>Weeezaa Board</h3>
+                <div class="wrapper">
+                    <div class="cols">
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tiles">
+                                <div class="front" style="background-image: url(images/board.jpg);">
+                                    <div class="inner">
+                                        <p>Weeezaa Board</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="https://chhaviarora1401.github.io/Weeezaa-Board/"
+                                                target="_blank">Here</a> </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div style="background-image: url(images/restraunt.png)" class="wh">
-                        <a href="" target="_blank">
-                            <div style="background-image: url(images/)" class="wt">
-                                <h3>Restraunt Site</h3>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tiles">
+                                <div class="front" style="background-image:url(images/restraunt.jpg);">
+                                    <div class="inner">
+                                        <p>Restraunt Site</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="" target="_blank">..</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div style="background-image: url(images/imgur.png)" class="wh">
-                        <a href="" target="_blank">
-                            <div class="wt">
-                                <h3>Imgur Clone</h3>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tiles">
+                                <div class="front" style="background-image: url(images/imgur.png)">
+                                    <div class="inner">
+                                        <p>Imgur Clone</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="" target="_blank">..</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div style="background-image: url(images/auto.png)" class="wh">
-                        <a href="https://chhaviarora1401.github.io/Backgroundcolorauto/index.html" target="_blank">
-                            <div class="wt">
-                                <h3>Auto Background color change</h3>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tilesr">
+                                <div class="front" style="background-image: url(images/auto.png)">
+                                    <div class="inner">
+                                        <p>Auto Background Color Change</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="https://chhaviarora1401.github.io/Backgroundcolorauto/index.html"
+                                                target="_blank">..</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div style="background-image: url(images/)" class="wh">
-                        <a href="" target="_blank">
-                            <div class="wt">
-                                <h3>Calculator</h3>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tilesr">
+                                <div class="front" style="background-image: url();">
+                                    <div class="inner">
+                                        <p>Calculator</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="" target="_blank">..</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div style="background-image: url(images/signup.png)" class="wh">
-                        <a href="https://chhaviarora1401.github.io/Signup-form/" target="_blank">
-                            <div class="wt">
-                                <h3>Sign up Form</h3>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tilesr">
+                                <div class="front" style="background-image: url(images/signup.png)">
+                                    <div class="inner">
+                                        <p>Sign Up Form</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="https://chhaviarora1401.github.io/Signup-form/"
+                                                target="_blank">.</a></a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div style="background-image: url(images/)" class="wh">
-                        <a href="" target="_blank">
-                            <div class="wt">
-                                <h3>Landing page</h3>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tiles">
+                                <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+                                    <div class="inner">
+                                        <p>Landing Page</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="" target="_blank">..</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div style="background-image: url(images/)" class="wh">
-                        <a href="" target="_blank">
-                            <div class="wt">
-                                <h3>.</h3>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tiles">
+                                <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                                    <div class="inner">
+                                        <p>@</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="" target="_blank">..</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div style="background-image: url(images/)" class="wh">
-                        <a href="" target="_blank">
-                            <div class="wt">
-                                <h3>.</h3>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tiles">
+                                <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                                    <div class="inner">
+                                        <p>#</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="" target="_blank">..</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="more"><a href="https://github.com/ChhaviArora1401?tab=repositories" target="_blank">See more
@@ -216,6 +295,7 @@
                         Github.</a>
                 </div>
             </div>
+
         </div>
         <div class="container">
             <div id="edu">
@@ -337,11 +417,25 @@
 
                         <textarea name="comments" rows="8" cols="24" class="wid a" placeholder="Message"></textarea>
                         <br>
-                        <button id="btn">
-                            Send <i class="fas fa-paper-plane"></i></span>
-                        </button>
-
                     </form>
+                    <button class="button">
+                        <span class="default">Send</span>
+                        <span class="success">
+                            <svg viewBox="0 0 16 16">
+                                <polyline points="3.75 9 7 12 13 5"></polyline>
+                            </svg>Sent
+                        </span>
+                        <svg class="trails" viewBox="0 0 33 64">
+                            <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60">
+                            </path>
+                            <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
+                        </svg>
+                        <div class="plane">
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </div>
+                    </button>
+
                 </div>
                 <div id="map">
                     <i class="fas fa-location-arrow"></i>
