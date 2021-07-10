@@ -13,21 +13,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4e692b66fb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-
-    <header>
+    <header id="navbar">
         <nav>
             <span id="logo" style="padding-left: 10px;"> <a href="#">Chhavi</a> </span>
             <div id="header-items">
                 <span> <a href="#info">About</a> </span>
                 <span> <a href="#projects">Projects</a> </span>
-                <span> <a href="docs/Chhavi_Arora_Resume.pdf">CV</a> </span>
+                <span> <a href="docs/Chhavi_Arora_Resume.pdf" target="_blank">CV</a> </span>
                 <span> <a href="#contact">Contact</a> </span>
             </div>
         </nav>
@@ -39,31 +40,30 @@
                     <span><button id="dark" style="border: 0ch; background-color: transparent;"><i
                                 class="far fa-lightbulb"></i></button></span>
                     <div id="name">Chhavi Arora</div>
-                    <div id="type">Type writing effect</div>
+                    <div>
+                        <p class="type anim-typewriter"><i class="fas fa-quote-left"></i> Coding is love and coffee is
+                            life! <i class="fas fa-quote-right"></i></p>
+                    </div>
                     <div style="width: 25%;">
                         <hr style="margin-bottom: 20px;">
                         <div id="social">
                             <div>
                                 <div class="grd"> </div>
-                                <div class="g"><a href="https://github.com/ChhaviArora1401"><i
-                                            class="fab fa-github-square z"></i></a> </div>
+                                <div class="g"><a href="https://github.com/ChhaviArora1401" target="_blank"></a> </div>
                             </div>
                             <div>
                                 <div class="grd"></div>
-                                <div class="l"><a href="https://www.linkedin.com/in/chhaviarora1401/">
-                                        <ion-icon name="logo-linkedin" class="z">
-                                        </ion-icon>
-                                    </a>
+                                <div class="l"><a href="https://www.linkedin.com/in/chhaviarora1401/"
+                                        target="_blank"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="grd"></div>
-                                <div class="m"><a href="mailto: chhaviarora111@gmail.com"><i
-                                            class="fas fa-envelope z"></i></a></div>
+                                <div class="m"><a href="mailto: chhaviarora111@gmail.com"></a></div>
                             </div>
                             <div>
                                 <div class="grd"></div>
-                                <div class="sl"><a href=""><i class="fab fa-slack z"></i></a></div>
+                                <div class="sl"><a href="" target="_blank"> </a></div>
                             </div>
                         </div>
                         <hr style="margin-top: 20px;">
@@ -82,20 +82,20 @@
                     <img src="images/a.jpg" height="500px" width="400px">
                 </div>
                 <div
-                    style="color: transparent; border-right: 6px solid rgb(122, 118, 118); height: 300px; margin-top: auto; margin-bottom: auto; margin-left: 10%;">
+                    style="color: transparent; border-right: 2px solid rgb(122, 118, 118); height: 300px; margin-top: auto; margin-bottom: auto; margin-left: 5%;">
                     ..</div>
                 <div id="text">
                     <div>
-                        <button id="t"><a href="#intro"><i class="fas fa-arrow-up"></i></a></button>
+                        <button id="t"><a href="#intro"><i style="color:white;"
+                                    class="fas fa-arrow-circle-up"></i></a></button>
                         <span class="h"> <span style="color: blueviolet; ">About</span> ME</span>
                         <br>
                         <div class="space"></div>
                         <div>
                             A self-taught front end developer who loves coding. <br>
                             My front end journey started since March 2021. <br>
-                            I try to create new things on my own from scratch and also like to learn from good
-                            developers.<br>
-                            one more line
+                            I try to create new things on my own from scratch <br>
+                            and also like to learn from good developers.<br>
                         </div>
                         <br>
                         <br>
@@ -103,105 +103,116 @@
                     <div>
                         <span class="h">Current Tech Stacks</span><br>
                         <div class="ico">
-                            <span class="hov"><a href=""><i class="fab fa-html5 s"></i></a></span>
-                            <span class="hov"><a href=""><i class="fab fa-css3 s"></i></a></span>
-                            <span class="hov"><a href=""><i class="fab fa-js-square s"></i></a></span>
-                            <span class="hov"><a href=""> <i class="fab fa-github-square s"></i></a></span>
-                            <span class="hov"><a href=""><i class="fab fa-git-alt s"></i></a></span>
+                            <span class="hov"><i class="fab fa-html5 s"></i></span>
+                            <span class="hide">HTML</span>
+                            <span class="hov"><i class="fab fa-css3 s"></i></span>
+                            <span class="hide">CS</span>
+                            <span class="hov"><i class="fab fa-js-square s"></i></span>
+                            <span class="hide">JavaScript</span>
+                            <span class="hov"> <i class="fab fa-github-square s"></i></span>
+                            <span class="hide">Github</span>
+                            <span class="hov"><i class="fab fa-git-alt s"></i></span>
+                            <span class="hide">Git</span>
                         </div>
                         <br>
                     </div>
                     <div>
                         <span class="h">Tech Stacks Learning</span><br>
                         <div class="ico">
-                            <span class="hov"><a href=""><i class="fab fa-jsfiddle s"></i></a></span>
-                            <span class="hov"><a href=""><i class="fab fa-codepen s"></i></a></span>
-                            <span class="hov"><a href=""><i class="fab fa-react s"></i></a></span>
-                            <span class="hov"><a href=""><i class="fab fa-npm s"></i></a></span>
-                            <span class="hov"><a href=""><i class="fab fa-node s"></i></a></span>
+                            <span class="hov"><i class="fab fa-jsfiddle s"></i></span>
+                            <span class="hide">JS Fiddle</span>
+                            <span class="hov"><i class="fab fa-codepen s"></i></span>
+                            <span class="hide">CodePen</span>
+                            <span class="hov"><i class="fab fa-react s"></i></span>
+                            <span class="hide">React</span>
+                            <span class="hov"><i class="fab fa-npm s"></i></span>
+                            <span class="hide">NPM</span>
+                            <span class="hov"><i class="fab fa-node s"></i></span>
+                            <span class="hide">Node.js</span>
                         </div>
                         <br>
                     </div>
                     <div>
                         <span class="h"><i class="fas fa-certificate"></i> Certifications</span> <br>
                         <div class="space"></div>
-                        <a style="color: rgb(122, 118, 118);"
-                            href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
-                        link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">HTML,
-                            CSS, and Javascript for Web Developers by Coursera</a>
+                        <a style="color: rgb(122, 118, 118);" href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
+                        link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+                            target="_blank">HTML,
+                            CSS, and Javascript for Web Developers<br> by Coursera</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div id="projects">
-                <div id="p-title"><i class="far fa-file-code"></i><i class="fas fa-file-code"></i>Projects</div>
+                <div id="p-title"><i class="far fa-file-code"></i> Projects</div>
                 <div id="all">
                     <div style="background-image: url(images/board.jpg);" class="wh">
-                        <a href="https://chhaviarora1401.github.io/Weeezaa-Board/">
+                        <a href="https://chhaviarora1401.github.io/Weeezaa-Board/" target="_blank">
                             <div class="wt">
                                 <h3>Weeezaa Board</h3>
                             </div>
                         </a>
                     </div>
                     <div style="background-image: url(images/restraunt.png)" class="wh">
-                        <a href="">
+                        <a href="" target="_blank">
                             <div style="background-image: url(images/)" class="wt">
                                 <h3>Restraunt Site</h3>
                             </div>
                         </a>
                     </div>
                     <div style="background-image: url(images/imgur.png)" class="wh">
-                        <a href="">
+                        <a href="" target="_blank">
                             <div class="wt">
                                 <h3>Imgur Clone</h3>
                             </div>
                         </a>
                     </div>
                     <div style="background-image: url(images/auto.png)" class="wh">
-                        <a href="https://chhaviarora1401.github.io/Backgroundcolorauto/index.html">
+                        <a href="https://chhaviarora1401.github.io/Backgroundcolorauto/index.html" target="_blank">
                             <div class="wt">
                                 <h3>Auto Background color change</h3>
                             </div>
                         </a>
                     </div>
                     <div style="background-image: url(images/)" class="wh">
-                        <a href="">
+                        <a href="" target="_blank">
                             <div class="wt">
                                 <h3>Calculator</h3>
                             </div>
                         </a>
                     </div>
                     <div style="background-image: url(images/signup.png)" class="wh">
-                        <a href="https://chhaviarora1401.github.io/Signup-form/">
+                        <a href="https://chhaviarora1401.github.io/Signup-form/" target="_blank">
                             <div class="wt">
                                 <h3>Sign up Form</h3>
                             </div>
                         </a>
                     </div>
                     <div style="background-image: url(images/)" class="wh">
-                        <a href="">
+                        <a href="" target="_blank">
                             <div class="wt">
                                 <h3>Landing page</h3>
                             </div>
                         </a>
                     </div>
                     <div style="background-image: url(images/)" class="wh">
-                        <a href="">
+                        <a href="" target="_blank">
                             <div class="wt">
                                 <h3>.</h3>
                             </div>
                         </a>
                     </div>
                     <div style="background-image: url(images/)" class="wh">
-                        <a href="">
+                        <a href="" target="_blank">
                             <div class="wt">
                                 <h3>.</h3>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="more"><a href="https://github.com/ChhaviArora1401?tab=repositories">See more on
+                <div class="more"><a href="https://github.com/ChhaviArora1401?tab=repositories" target="_blank">See more
+                        on
                         Github.</a>
                 </div>
             </div>
@@ -212,7 +223,7 @@
                 <div class="timeline">
                     <div class="contain left">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-school"></i>10<sup>th</sup></span>
+                            <span class="heading"><i class="fas fa-school"></i> <b>10<sup>th</sup></b></span>
                             <ul>
                                 <li><small>2016-2017</small></li>
                             </ul>
@@ -220,23 +231,23 @@
                         </div>
                     </div>
                     <i class="fas fa-caret-right arrowr"></i>
-                    <i class="fas fa-dot-circle ic"></i>
+                    <i class="far fa-circle ic"></i>
                     <div class="line">..</div>
                     <div class="contain right">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-school"></i>10<sup>th</sup></span>
+                            <span class="heading"><i class="fas fa-school"></i> <b>12<sup>th</sup></b></span>
                             <ul>
                                 <li><small>2018-2019</small></li>
                             </ul>
                             <p>Completed XII with Commerce Stream.</p>
                         </div>
                     </div>
-                    <i class="fas fa-dot-circle ic"></i>
+                    <i class="far fa-circle ic"></i>
                     <i class="fas fa-caret-left arrowl"></i>
                     <div class="line">..</div>
                     <div class="contain left">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-graduation-cap"></i>Graduation</span>
+                            <span class="heading"><i class="fas fa-graduation-cap"></i> <b>Graduation</b></span>
                             <ul>
                                 <li><small>2019-2022</small></li>
                             </ul>
@@ -246,7 +257,7 @@
                         </div>
                     </div>
                     <i class="fas fa-caret-right arrowr"></i>
-                    <i class="fas fa-dot-circle  ic"></i>
+                    <i class="far fa-circle ic"></i>
                 </div>
             </div>
         </div>
@@ -256,7 +267,7 @@
                 <div class="timeline">
                     <div class="contain left">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-school"></i>10<sup>th</sup></span>
+                            <span class="heading"><i class="fas fa-school"></i><b>10<sup>th</sup></b></span>
                             <ul>
                                 <li><small>2016-2017</small></li>
                             </ul>
@@ -264,18 +275,18 @@
                         </div>
                     </div>
                     <i class="fas fa-caret-right arrowr"></i>
-                    <i class="fas fa-dot-circle ic"></i>
+                    <i class="far fa-circle ic"></i>
                     <div class="line">..</div>
                     <div class="contain right">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-school"></i>10<sup>th</sup></span>
+                            <span class="heading"><i class="fas fa-school"></i><b>12<sup>th</sup></b></span>
                             <ul>
                                 <li><small>2018-2019</small></li>
                             </ul>
                             <p>Completed XII with Commerce Stream.</p>
                         </div>
                     </div>
-                    <i class="fas fa-dot-circle ic"></i>
+                    <i class="far fa-circle ic"></i>
                     <i class="fas fa-caret-left arrowl"></i>
                 </div>
             </div>
@@ -286,29 +297,33 @@
                 justify-content: space-between;">
                     <div style="display: flex;
                     flex-direction: column; height: 600px;">
-                        <h1 style="font-size: 25px; text-align: left;">Testimonials</h1>
+                        <h1 style="font-size: 25px; text-align: left;   color: orange;">Testimonials</h1>
                         <h1 style="font-size: 35px; text-align: left;">Word on The Street</h1>
                         <img src="images/abou.jpg" height=" 300px" width="300px" />
                     </div>
                     <div style="display: flex; flex-direction: column; 
-                        height: 450px; align-content: flex-start; justify-content: flex-end;">
-                        <i class="fas fa-quote-left"></i><br>
+                        height: 450px; align-content: flex-start; justify-content: flex-end; margin-top: 1%;">
+                        <i class="fas fa-quote-left qq"></i><br>
                         Lorem ipsum dolor sit amet, quo ei simul congue exerci, <br>
                         ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. <br>
                         Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo <br>
                         iusto primis ea eam.<br>
-                        <i class="fas fa-quote-right"></i>
-                        <small style="font-size: 13px;">Lorem ipsum <br>
+                        <i style="margin-left: 30%; margin-top: 4%;" class="fas fa-quote-right  qq"></i>
+                        <small style="font-size: 13px; margin-top: 10%;">Lorem ipsum <br>
                             dolor sit amet</small>
                     </div>
+                </div>
+                <div style="display: flex; width: 30%; margin-left: 80%; margin-top: -15%;">
+                    <a href="??" class="previous">&laquo; Previous</a>
+                    <a href="??" class="next">Next &raquo;</a>
                 </div>
 
             </div>
         </div>
         <div class=" container">
             <div id="contact">
-                <div>
-                    <h1>Contact Form</h1>
+                <div style="padding-top: 4%;">
+                    <h1 style="color:cornflowerblue;">Contact Form</h1>
                     <form>
                         <div>
                             <input type="text" class="wid" placeholder="Name">
@@ -322,10 +337,9 @@
 
                         <textarea name="comments" rows="8" cols="24" class="wid a" placeholder="Message"></textarea>
                         <br>
-                        <span id="btn">
-                            <input type="submit" value="Submit" id="sub" /><span><i
-                                    class="fas fa-paper-plane"></i></span>
-                        </span>
+                        <button id="btn">
+                            Send <i class="fas fa-paper-plane"></i></span>
+                        </button>
 
                     </form>
                 </div>
@@ -369,12 +383,30 @@
                 </div>
             </div>
 
+            <div id="social-footer">
+                <div>
+                    <div><a href="https://github.com/ChhaviArora1401" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="mailto: chhaviarora111@gmail.com"><i class="fas fa-at"></i></a></div>
+                </div>
+                <div>
+                    <div><a href="" target="_blank"> <i class="fab fa-slack-hash"></i></a></div>
+                </div>
+            </div>
 
             <span id="cpy">&copy; Chhavi Arora, 2021 </span>
         </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

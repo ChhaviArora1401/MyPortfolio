@@ -18,8 +18,20 @@ body {
 header {
   background-color: black;
   position: fixed;
+  z-index: 2;
   width: 100%;
   box-shadow: 5px 3px 8px 5px #aaaaaa;
+}
+
+nav {
+  display: flex;
+  background-color: black;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  color: white;
+  justify-content: space-between;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav a {
@@ -50,19 +62,8 @@ nav a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-nav {
-  background-color: black;
-  padding: 0.5% 0.5% 0.5% 0.5%;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #header-items {
-  display: flex;
+  display: inline-flex;
   width: 20%;
   font-size: 0.75em;
   align-items: center;
@@ -99,6 +100,39 @@ nav {
   margin: 8% 0% 2% 8%;
 }
 
+.type {
+  color: rgb(3, 3, 3);
+  width: 18em;
+  border-right: 2px solid white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*Animation*/
+.anim-typewriter {
+      animation: typewriter 4s steps(40) 2s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 18em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgb(3, 3, 3);
+      }
+      to {
+            border-right-color: #ecdce200;
+      }
+}
+
 #name {
   font-size: 3.5em;
   background-image: linear-gradient(
@@ -115,6 +149,16 @@ nav {
   font-weight: bold;
   margin-bottom: 2%;
   letter-spacing: -1;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #type {
@@ -142,39 +186,57 @@ nav {
   font-size: 2em; 
   color: rgb(14, 13, 14);
   border-radius: 10px; 
+  background-color: white;
 }
 
 .g {
-  background-color: rgb(240, 240, 240);
-  padding: 1% 12% 1% 12%;
+  background-image:url('images/g-b.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(248, 246, 246);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  padding-top: -5%;
   margin-top: 7%;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-right: 3%;
   float: right;
 }
 
 .l {
-  background-color: rgb(240, 240, 240);
-  padding: 10% 5% 0% 5%;
-  padding-bottom: -10%;
-  margin-top: -10%;
-  border-radius: 3px;
+  background-image:url('images/l-b.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(248, 246, 246);
+  margin-top: 7%;
+  border-radius: 5px;
   margin-right: 3%;
   float: right;
 }
 
 .m {
-  background-color: rgb(240, 240, 240);
-  padding: 1% 12% 1% 12%;
+  background-image:url('images/m-b.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(248, 246, 246);
+  width: 42px;
+  height: 42px;
   margin-top: 7%;
-  border-radius: 3px;
+  border-radius: 7px;
   margin-right: 3%;
   float: right;
 }
 
 .sl {
-  background-color: rgb(240, 240, 240);
-  padding: 1% 12% 1% 12%;
+  background-image:url('images/s-w.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(15, 15, 15);
+  width: 40px;
+  height: 40px;
   margin-top: 7%;
   border-radius: 3px;
   margin-right: 3%;
@@ -185,9 +247,39 @@ nav {
   color: #fffbfb;
 }
 
-.g:hover, .l:hover, .sl:hover, .m:hover{
-  color: #fdfcfc;
+.g:hover {
   background-color: black;
+  background-image: url('images/g-w.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.m:hover {
+  background-image: url('images/m-w.png');
+  background-color: rgb(5, 5, 5);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+}
+
+.sl:hover {
+  background-image: url('images/s-b.png');
+  background-color: rgb(248, 246, 246);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+}
+
+.l:hover {
+  background-image:url('images/l-w.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  border-radius: 5px;
 }
 
 #social {
@@ -212,9 +304,11 @@ hr {
   /* position: absolute; */
   position: fixed;
   padding: 0.5%;
+  height: 50px;
+  width: 50px;
   border: 0;
   font-size: 1.25em;
-  background-color: darkorchid;
+  background-color: rgb(33, 122, 196);
 }
 
 #info {
@@ -231,7 +325,7 @@ hr {
 #text {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-left: 5%;
   color: rgb(122, 118, 118);
 }
 
@@ -240,7 +334,7 @@ hr {
 }
 
 .s {
-  font-size: 2em;
+  font-size: 1.75em;
   margin-top: 20px;
 }
 
@@ -253,22 +347,40 @@ hr {
 
 .ico {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: -12%;
   height: 100px;
+  width: 600px;
+  justify-content: space-between;
 }
 
 .hov {
   display: inline-flex;
+  justify-content: space-between;
 }
 
 .hov a {
   color: rgb(122, 118, 118);
 }
 
-.hov a:hover {
-  font-size: 1.5em;
-  
+.hov:hover {
+  font-size: 1.25em;
+  color: rgb(122, 118, 118);
+  justify-content: space-between;
+}
+
+.hide {
+  display: none;
+  font-size: 0.7em;
+  margin-left: -20%;
+  position: relative;
+  margin-bottom: 10%;
+  z-index:2;
+}
+    
+.hov:hover + .hide {
+  display: block;
+  max-width: 150px;
+  font-size: 0.7em;
+  color: red;
 }
 
 #projects {
@@ -323,6 +435,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25px;
+  transition: transform .2s;
   margin-left: auto;
   margin-right: auto;
   background-color: darkslateblue;
@@ -336,8 +449,12 @@ hr {
   margin-top: -6%;
 }
 
-.wh :hover {
+.wt:hover {
   background-color: transparent;
+}
+
+.wh:hover {  
+  transform: scale(1.5);
 }
 
 .more {
@@ -360,24 +477,11 @@ hr {
   box-shadow: 0px 3px 5px #ff60be;
 }
 
-
 h3 {
   padding-top: 27%;
   text-align: left;
   padding-left: 5%;
   color: #fdfcfc;
-}
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 ul li{
@@ -410,6 +514,8 @@ h1 {
 .contain {
   width: 45%;
   background-color: white;
+  border-radius: 10px;
+  padding: 1%;
 }
 
 .ic {
@@ -463,10 +569,36 @@ small {
 
 .testimonials {
   height: 800px;
-  padding: 2% 4% 3% 4%;
+  padding: 7% 4% 2% 4%;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.qq {
+  font-size: 2em;
+  color: #eb6cdf;
+}
+
+.testimonials a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.testimonials a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
 }
 
 #contact {
@@ -513,7 +645,8 @@ small {
   width: 50%;
   float: right;
   right: 0;
-  margin-top: -33%;
+  padding-top: -4%;
+  margin-top: -40%;
 }
 
 footer {
@@ -537,6 +670,16 @@ footer a {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
+}
+
+#social-footer {
+  display: flex;
+  width: 40%;
+  margin-top: -7%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
 }
 
 #footer-items {
