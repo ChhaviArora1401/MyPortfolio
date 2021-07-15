@@ -21,17 +21,95 @@
 
 </head>
 
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #namek {
+        width: 100px;
+        height: 100px;
+        left: 600px;
+        top: 200px;
+        background-color: rgb(253, 252, 252);
+        position: absolute;
+        color: rgb(109, 83, 83);
+        animation-name: example;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        z-index: 35;
+    }
+
+    @keyframes example {
+        0% {
+            background-color: rgb(200, 255, 0);
+            left: 600px;
+            top: 200px;
+            opacity: 0.9;
+        }
+
+        25% {
+            background-color: rgb(0, 247, 255);
+            left: 800px;
+            top: 200px;
+            opacity: 0.8;
+        }
+
+        50% {
+            background-color: rgb(204, 0, 255);
+            left: 800px;
+            top: 400px;
+            opacity: 0.7;
+        }
+
+        75% {
+            background-color: green;
+            left: 600px;
+            top: 400px;
+            opacity: 0.6;
+        }
+
+        100% {
+            background-color: rgb(0, 183, 255);
+            left: 600px;
+            top: 200px;
+            opacity: 0.3;
+        }
+    }
+
+    .namem {
+        width: 100px;
+        height: 100px;
+        left: 800px;
+        top: 200px;
+        opacity: 0;
+        background-color: rgb(253, 252, 252);
+        position: absolute;
+        color: rgb(109, 83, 83);
+        animation-name: example;
+        animation-duration: 4s;
+        z-index: 35;
+    }
+</style>
+</head>
+
 <body>
-    <div id="overlay-preload"><span>Welcome</span></div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+    <div id="loading">
+        <div id="namek" class="namem"> Welcome </div>
+    </div>
     <header id="navbar">
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <span id="logo" style="padding-left: 10px;"> <a href="#">Chhavi</a> </span>
             <div id="header-items">
+                <span id="home"><a href="#intro" class="active">Home</a></span>
                 <span> <a href="#info">About</a> </span>
                 <span> <a href="#projects">Projects</a> </span>
                 <span> <a href="docs/Chhavi_Arora_Resume.pdf" target="_blank">CV</a> </span>
                 <span> <a href="#contact">Contact</a> </span>
+                <span><a href="javascript:void(0);" class="icon" onclick="myfunction()"><i
+                            class="fas fa-ellipsis-v"></i></a></span>
             </div>
         </nav>
     </header>
@@ -46,7 +124,7 @@
                         <p class="type anim-typewriter"><i class="fas fa-quote-left"></i> Coding is love and coffee is
                             life! <i class="fas fa-quote-right"></i></p>
                     </div>
-                    <div style="width: 25%;">
+                    <div id="s-box" style="width: 25%;">
                         <hr style="margin-bottom: 20px;">
                         <div id="social">
                             <div>
@@ -83,9 +161,10 @@
                 <div id="img1" style="padding-top: 2%;">
                     <img src="images/a.jpg" height="500px" width="400px">
                 </div>
-                <div
-                    style="color: transparent; border-right: 2px solid rgb(122, 118, 118); height: 300px; margin-top: auto; margin-bottom: auto; margin-left: 5%;">
-                    ..</div>
+                <div id="vl" style="color: transparent; height: 300px; margin-top: auto;
+                border-right: 2px solid rgb(122, 118, 118); 
+                margin-bottom: auto; margin-left: 5%;"> ..</div>
+                <hr class="hr-t" style="visibility: hidden;">
                 <div id="text">
                     <div>
                         <button id="t"><a href="#intro"><i style="color:white;"
@@ -373,16 +452,13 @@
         </div>
         <div class="container">
             <div class="testimonials">
-                <div style="display: flex;
-                justify-content: space-between;">
-                    <div style="display: flex;
-                    flex-direction: column; height: 600px;">
+                <div class="testmon" style="display: flex; justify-content: space-between;">
+                    <div id="imag">
                         <h1 style="font-size: 25px; text-align: left;   color: orange;">Testimonials</h1>
                         <h1 style="font-size: 35px; text-align: left;">Word on The Street</h1>
                         <img src="images/abou.jpg" height=" 300px" width="300px" />
                     </div>
-                    <div style="display: flex; flex-direction: column; 
-                        height: 450px; align-content: flex-start; justify-content: flex-end; margin-top: 1%;">
+                    <div id="comm">
                         <i class="fas fa-quote-left qq"></i><br>
                         Lorem ipsum dolor sit amet, quo ei simul congue exerci, <br>
                         ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. <br>
@@ -393,50 +469,37 @@
                             dolor sit amet</small>
                     </div>
                 </div>
-                <div style="display: flex; width: 30%; margin-left: 80%; margin-top: -15%;">
-                    <a href="??" class="previous">&laquo; Previous</a>
-                    <a href="??" class="next">Next &raquo;</a>
+                <div id="navi">
+                    <a href="??" class="previous">&laquo;Previous</a>
+                    <a href="??" class="next">Next&raquo;</a>
                 </div>
 
             </div>
         </div>
         <div class=" container">
             <div id="contact">
-                <div style="padding-top: 4%;">
+                <div id="c-form" style="padding-top: 4%;">
                     <h1 style="color:cornflowerblue;">Contact Form</h1>
-                    <form action=”mailto:chhaviarora1401@gmail.com” method=”POST” enctype=”multipart/form-data”
-                        name=”EmailForm”>
+                    <form action="https://formsubmit.co/chhaviarora1401@gmail.com" method="POST">
                         <div>
-                            <input type="text" class="wid" placeholder="Name">
+                            <input type="text" class="wid" name="name" placeholder="Name" required>
+                        </div>
+                        <input type="hidden" name="_next" value="">
+                        <div>
+                            <input type="text" class="wid" name="email" placeholder="E-mail address" required>
                         </div>
                         <div>
-                            <input type="text" class="wid" placeholder="E-mail address">
+                            <input type="text" class="wid" name="-subject" placeholder="Subject" required>
                         </div>
-                        <div>
-                            <input type="text" class="wid" placeholder="Subject">
-                        </div>
+                        <input type="hidden" name="_honey" style="display:none">
 
-                        <textarea name="comments" rows="8" cols="24" class="wid a" placeholder="Message"></textarea>
+                        <textarea name="comments" rows="8" cols="24" class="wid a" placeholder="Message"
+                            required></textarea>
                         <br>
-                    </form>
-                    <button class="button">
-                        <span class="default">Send</span>
-                        <span class="success">
-                            <svg viewBox="0 0 16 16">
-                                <polyline points="3.75 9 7 12 13 5"></polyline>
-                            </svg>Sent
-                        </span>
-                        <svg class="trails" viewBox="0 0 33 64">
-                            <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60">
-                            </path>
-                            <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
-                        </svg>
-                        <div class="plane">
-                            <div class="left"></div>
-                            <div class="right"></div>
+                        <div>
+                            <button class="send" type="submit">Send <i class="fas fa-paper-plane"></i></button>
                         </div>
-                    </button>
-
+                    </form>
                 </div>
                 <div id="map">
                     <i class="fas fa-location-arrow"></i>
