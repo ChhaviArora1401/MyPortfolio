@@ -1,7 +1,7 @@
-////Overlay fade out on load
-// $(window).load(function (i) {
-//     $('#loading').delay(10).fadeOut('slow');
-// });
+//Overlay fade out on load
+$(window).load(function (i) {
+    $('#loading').delay(10).fadeOut('slow');
+});
 
 // $(window).load(function () {
 //     $('#loading').hide();
@@ -18,7 +18,8 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-function myfunction() {
+
+function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";

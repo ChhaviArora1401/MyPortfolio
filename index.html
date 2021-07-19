@@ -27,7 +27,7 @@
         padding: 0;
     }
 
-    #namek {
+    #overw {
         width: 100px;
         height: 100px;
         left: 600px;
@@ -78,7 +78,7 @@
         }
     }
 
-    .namem {
+    .over {
         width: 100px;
         height: 100px;
         left: 800px;
@@ -96,20 +96,23 @@
 
 <body>
 
-    <div id="loading">
-        <div id="namek" class="namem"> Welcome </div>
+    <div id="loading" class="loadingm">
+        <div id="overw" class="over"> Welcome </div>
     </div>
+
     <header id="navbar">
-        <nav class="topnav" id="myTopnav">
-            <span id="logo" style="padding-left: 10px;"> <a href="#">Chhavi</a> </span>
-            <div id="header-items">
-                <span id="home"><a href="#intro" class="active">Home</a></span>
-                <span> <a href="#info">About</a> </span>
-                <span> <a href="#projects">Projects</a> </span>
-                <span> <a href="docs/Chhavi_Arora_Resume.pdf" target="_blank">CV</a> </span>
-                <span> <a href="#contact">Contact</a> </span>
-                <span><a href="javascript:void(0);" class="icon" onclick="myfunction()"><i
-                            class="fas fa-ellipsis-v"></i></a></span>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <span id="logo"> <a href="#">Chhavi</a> </span>
+                <span>
+                    <a href="#info">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="docs/Chhavi_Arora_Resume.pdf" target="_blank">CV</a>
+                    <a href="#contact">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        @
+                    </a>
+                </span>
             </div>
         </nav>
     </header>
@@ -167,9 +170,9 @@
                 <hr class="hr-t" style="visibility: hidden;">
                 <div id="text">
                     <div>
-                        <button id="t"><a href="#intro"><i style="color:white;"
+                        <button id="top"><a href="#intro"><i style="color:white;"
                                     class="fas fa-arrow-circle-up"></i></a></button>
-                        <span class="h"> <span style="color: blueviolet; ">About</span> ME</span>
+                        <span class="info-sub"> <span style="color: blueviolet; ">About</span> ME</span>
                         <br>
                         <div class="space"></div>
                         <div>
@@ -182,7 +185,7 @@
                         <br>
                     </div>
                     <div>
-                        <span class="h">Current Tech Stacks</span><br>
+                        <span class="intro-sub">Current Tech Stacks</span><br>
                         <div class="ico">
                             <span class="hov"><i class="fab fa-html5 s"></i></span>
                             <span class="hide">HTML</span>
@@ -198,7 +201,7 @@
                         <br>
                     </div>
                     <div>
-                        <span class="h">Tech Stacks Learning</span><br>
+                        <span class="intro-sub">Tech Stacks Learning</span><br>
                         <div class="ico">
                             <span class="hov"><i class="fab fa-jsfiddle s"></i></span>
                             <span class="hide">JS Fiddle</span>
@@ -214,7 +217,7 @@
                         <br>
                     </div>
                     <div>
-                        <span class="h"><i class="fas fa-certificate"></i> Certifications</span> <br>
+                        <span class="intro-sub"><i class="fas fa-certificate"></i> Certifications</span> <br>
                         <div class="space"></div>
                         <a style="color: rgb(122, 118, 118);" href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
                         link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
@@ -453,18 +456,18 @@
         <div class="container">
             <div class="testimonials">
                 <div class="testmon" style="display: flex; justify-content: space-between;">
-                    <div id="imag">
+                    <div id="image">
                         <h1 style="font-size: 25px; text-align: left;   color: orange;">Testimonials</h1>
                         <h1 style="font-size: 35px; text-align: left;">Word on The Street</h1>
                         <img src="images/abou.jpg" height=" 300px" width="300px" />
                     </div>
-                    <div id="comm">
-                        <i class="fas fa-quote-left qq"></i><br>
+                    <div id="comment">
+                        <i class="fas fa-quote-left quotes"></i><br>
                         Lorem ipsum dolor sit amet, quo ei simul congue exerci, <br>
                         ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. <br>
                         Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo <br>
                         iusto primis ea eam.<br>
-                        <i style="margin-left: 30%; margin-top: 4%;" class="fas fa-quote-right  qq"></i>
+                        <i style="margin-left: 30%; margin-top: 4%;" class="fas fa-quote-right quotes"></i>
                         <small style="font-size: 13px; margin-top: 10%;">Lorem ipsum <br>
                             dolor sit amet</small>
                     </div>
@@ -476,10 +479,10 @@
 
             </div>
         </div>
-        <div class=" container">
+        <div class="container">
             <div id="contact">
-                <div id="c-form" style="padding-top: 4%;">
-                    <h1 style="color:cornflowerblue;">Contact Form</h1>
+                <div id="c-form">
+                    <h1 style="color:cornflowerblue; font-size: 3em;">Contact Form</h1>
                     <form action="https://formsubmit.co/chhaviarora1401@gmail.com" method="POST">
                         <div>
                             <input type="text" class="wid" name="name" placeholder="Name" required>
