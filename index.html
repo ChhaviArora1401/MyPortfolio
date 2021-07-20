@@ -22,11 +22,6 @@
 </head>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
     #overw {
         width: 100px;
         height: 100px;
@@ -93,12 +88,21 @@
     }
 </style>
 </head>
+<script>
+    window.onload = function () { hide() };
+    var mybutton = document.getElementById("myBtn");
+
+    function hide() {
+        mybutton.style.display = "none";
+    }
+
+</script>
 
 <body>
-
+    <!-- 
     <div id="loading" class="loadingm">
         <div id="overw" class="over"> Welcome </div>
-    </div>
+    </div> -->
 
     <header id="navbar">
         <nav>
@@ -120,19 +124,23 @@
         <div class="container">
             <div id="intro">
                 <div id="self">
-                    <span><button id="dark" style="border: 0ch; background-color: transparent;"><i
-                                class="far fa-lightbulb"></i></button></span>
+                    <span><button id="dark" style="border: 0ch; background-color: transparent;">
+                            <!-- <i class="far fa-lightbulb"></i></button></span> -->
+                        </button></span>
+                    <span id="i-a">
+                        Hey! I am
+                    </span>
                     <div id="name">Chhavi Arora</div>
-                    <div>
-                        <p class="type anim-typewriter"><i class="fas fa-quote-left"></i> Coding is love and coffee is
-                            life! <i class="fas fa-quote-right"></i></p>
+                    <div id="def">
+                        <i class="fas fa-code"></i> I am a front end developer.<i class="fas fa-code"></i>
                     </div>
                     <div id="s-box" style="width: 25%;">
-                        <hr style="margin-bottom: 20px;">
+                        <hr>
                         <div id="social">
                             <div>
                                 <div class="grd"> </div>
-                                <div class="g"><a href="https://github.com/ChhaviArora1401" target="_blank"></a> </div>
+                                <div class="g"><a href="https://github.com/ChhaviArora1401" target="_blank"></a>
+                                </div>
                             </div>
                             <div>
                                 <div class="grd"></div>
@@ -149,11 +157,12 @@
                                 <div class="sl"><a href="" target="_blank"> </a></div>
                             </div>
                         </div>
-                        <hr style="margin-top: 20px;">
+                        <hr style="margin-top: 40px;">
                     </div>
-
-                    <div id="def">
-                        I am a front end developer.<i class="fas fa-code"></i><i class="fas fa-laptop-code"></i>
+                    <div>
+                        <p class="type anim-typewriter"><i class="fas fa-quote-left"></i> Coding is love and
+                            coffee is
+                            life! <i class="fas fa-quote-right"></i></p>
                     </div>
                 </div>
             </div>
@@ -170,9 +179,14 @@
                 <hr class="hr-t" style="visibility: hidden;">
                 <div id="text">
                     <div>
-                        <button id="top"><a href="#intro"><i style="color:white;"
-                                    class="fas fa-arrow-circle-up"></i></a></button>
-                        <span class="info-sub"> <span style="color: blueviolet; ">About</span> ME</span>
+                        <button onload="hide()" onclick="topFunction()" id="myBtn"><a href="#intro"><i
+                                    style="color:white;" class="fas fa-arrow-circle-up"></i></a></button>
+                        <span style="font-size: 1.5em;
+                        margin-top: -10%; background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91% );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;"><i class="fas fa-user"></i></span>
+                        <span class="info-sub"> About ME</span>
                         <br>
                         <div class="space"></div>
                         <div>
@@ -217,9 +231,9 @@
                         <br>
                     </div>
                     <div>
-                        <span class="intro-sub"><i class="fas fa-certificate"></i> Certifications</span> <br>
+                        <span class="intro-sub"> Certifications</span> <br>
                         <div class="space"></div>
-                        <a style="color: rgb(122, 118, 118);" href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
+                        <a href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
                         link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
                             target="_blank">HTML,
                             CSS, and Javascript for Web Developers<br> by Coursera</a>
@@ -242,8 +256,8 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="https://chhaviarora1401.github.io/Weeezaa-Board/"
-                                                target="_blank">Here</a> </p>
+                                        <p><a href="https://chhaviarora1401.github.io/Weeezaa-Board/" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i></a> </p>
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +272,7 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="" target="_blank">..</a></p>
+                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +287,7 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="" target="_blank">..</a></p>
+                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +303,7 @@
                                 <div class="back">
                                     <div class="inner">
                                         <p><a href="https://chhaviarora1401.github.io/Backgroundcolorauto/index.html"
-                                                target="_blank">..</a></p>
+                                                target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -304,7 +318,7 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="" target="_blank">..</a></p>
+                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -319,15 +333,15 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="https://chhaviarora1401.github.io/Signup-form/"
-                                                target="_blank">.</a></a></p>
+                                        <p><a href="https://chhaviarora1401.github.io/Signup-form/" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i></a></a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col" ontouchstart="this.classList.toggle('hover');">
                             <div class="p-tiles">
-                                <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+                                <div class="front" style="background-image: url">
                                     <div class="inner">
                                         <p>Landing Page</p>
                                         <span>.</span>
@@ -335,14 +349,14 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="" target="_blank">..</a></p>
+                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col" ontouchstart="this.classList.toggle('hover');">
                             <div class="p-tiles">
-                                <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                                <div class="front" style="background-image: url">
                                     <div class="inner">
                                         <p>@</p>
                                         <span>.</span>
@@ -350,14 +364,14 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="" target="_blank">..</a></p>
+                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col" ontouchstart="this.classList.toggle('hover');">
                             <div class="p-tiles">
-                                <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                                <div class="front" style="background-image: url">
                                     <div class="inner">
                                         <p>#</p>
                                         <span>.</span>
@@ -365,16 +379,15 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="" target="_blank">..</a></p>
+                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="more"><a href="https://github.com/ChhaviArora1401?tab=repositories" target="_blank">See more
-                        on
-                        Github.</a>
+                <div class="more"><a href="https://github.com/ChhaviArora1401?tab=repositories"
+                        target="_blank"><span>See more on Github.</span></a>
                 </div>
             </div>
 
@@ -385,11 +398,11 @@
                 <div class="timeline">
                     <div class="contain left">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-school"></i> <b>10<sup>th</sup></b></span>
-                            <ul>
-                                <li><small>2016-2017</small></li>
-                            </ul>
-                            <p>10th standard.</p>
+                            <span class="heading"><i class="fas fa-school"></i> <b>10<sup>th</sup> Standard</b></span>
+                            <small>2016-2017</small>
+                            <p>Brilliant's Convent School <br>
+                                <span style="font-size: 16px;">CBSE 10th standard </span>
+                            </p>
                         </div>
                     </div>
                     <i class="fas fa-caret-right arrowr"></i>
@@ -397,11 +410,11 @@
                     <div class="line">..</div>
                     <div class="contain right">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-school"></i> <b>12<sup>th</sup></b></span>
-                            <ul>
-                                <li><small>2018-2019</small></li>
-                            </ul>
-                            <p>Completed XII with Commerce Stream.</p>
+                            <span class="heading"><i class="fas fa-school"></i> <b>12<sup>th</sup> Standard</b></span>
+                            <small>2018-2019</small>
+                            <p>Brilliant's Convent School <br>
+                                <span style="font-size: 16px;">CBSE 12th standard </span>
+                            </p>
                         </div>
                     </div>
                     <i class="far fa-circle ic"></i>
@@ -410,9 +423,7 @@
                     <div class="contain left">
                         <div class="content">
                             <span class="heading"><i class="fas fa-graduation-cap"></i> <b>Graduation</b></span>
-                            <ul>
-                                <li><small>2019-2022</small></li>
-                            </ul>
+                            <small>2019-2022</small>
                             <p>Vivekananda Institute of Professional Studies <br>
                                 <span style="font-size: 16px;">Bacherlors of Computer Application</span>
                             </p>
@@ -429,11 +440,13 @@
                 <div class="timeline">
                     <div class="contain left">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-school"></i><b>10<sup>th</sup></b></span>
-                            <ul>
-                                <li><small>2016-2017</small></li>
-                            </ul>
-                            <p>10th standard.</p>
+                            <span class="heading"><i class="fas fa-school"></i> <b>Internship</b></span>
+                            <small>Apr'21-Jun'21</small>
+                            <p>Intenshala <br>
+                                <span style="font-size: 16px;"> Campus Ambassador Program -Internshala
+                                    Student
+                                    Partner (ISP)22 </span>
+                            </p>
                         </div>
                     </div>
                     <i class="fas fa-caret-right arrowr"></i>
@@ -441,11 +454,11 @@
                     <div class="line">..</div>
                     <div class="contain right">
                         <div class="content">
-                            <span class="heading"><i class="fas fa-school"></i><b>12<sup>th</sup></b></span>
-                            <ul>
-                                <li><small>2018-2019</small></li>
-                            </ul>
-                            <p>Completed XII with Commerce Stream.</p>
+                            <span class="heading"><i class="fas fa-school"></i></b></span>
+                            <small>Apr'21-Present</small>
+                            <p>ACE, Technical Society of VIPS <br>
+                                <span style="font-size: 16px;"> Member, Web Development Team </span>
+                            </p>
                         </div>
                     </div>
                     <i class="far fa-circle ic"></i>
@@ -453,7 +466,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="testimonials">
                 <div class="testmon" style="display: flex; justify-content: space-between;">
                     <div id="image">
@@ -478,11 +491,14 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <div id="contact">
                 <div id="c-form">
-                    <h1 style="color:cornflowerblue; font-size: 3em;">Contact Form</h1>
+                    <h1 style="color:cornflowerblue; font-size: 3em; width: 50%;">Ready to make something awesome?
+                        <br>
+                        Let's get on a call.<i class="fas fa-hands-helping"></i>
+                    </h1>
                     <form action="https://formsubmit.co/chhaviarora1401@gmail.com" method="POST">
                         <div>
                             <input type="text" class="wid" name="name" placeholder="Name" required>
@@ -500,16 +516,12 @@
                             required></textarea>
                         <br>
                         <div>
-                            <button class="send" type="submit">Send <i class="fas fa-paper-plane"></i></button>
+                            <button class="send" type="submit"><span>Send <i
+                                        class="fas fa-paper-plane"></i></span></button>
                         </div>
                     </form>
                 </div>
-                <div id="map">
-                    <i class="fas fa-location-arrow"></i>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112173.02287907693!2d77.1387733802525!3d28.527484973572147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1625437807192!5m2!1sen!2sin"
-                        width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+
             </div>
         </div>
     </div>
@@ -518,20 +530,28 @@
 
     <footer>
         <div style="width: 83%;
-        margin-left: auto;
-        margin-right: auto;">
-            <div>
-                Ready to make something awesome? <br>
-                Let's get on a call.<i class="fas fa-hands-helping"></i>
-            </div>
+              margin-left: auto;
+              margin-right: auto;">
             <div style="display: flex;
             justify-content: space-between;">
-                <div id="f">
-                    <span>
-                        Chhavi Arora <br>
-                        <a href="mailto: chhaviarora1401@gmail.com"><i class="far fa-envelope"></i>
-                            Chhaviarora111@gmail.com</a>
-                    </span>
+                <div>
+                    <div id="f">
+                        <span>
+                            Chhavi Arora <br>
+                            <a href="mailto: chhaviarora1401@gmail.com"><i class="far fa-envelope"></i>
+                                Chhaviarora111@gmail.com</a>
+                        </span>
+                    </div>
+                </div>
+                <div id="social-footer">
+                    <ul class="icon-effect icon-effect-1a">
+                        <li><a href="https://github.com/ChhaviArora1401" target="_blank" class="icon"><i
+                                    class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank" class="icon"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto: chhaviarora111@gmail.com" class="icon"><i class="fas fa-at"></i></a></li>
+                        <li><a href="" class="icon"><i class="fab fa-slack-hash"></i></a></li>
+                    </ul>
                 </div>
                 <div id="footer-items">
                     <span>
@@ -542,28 +562,14 @@
                     </span>
                     <span>Services</span>
                 </div>
-            </div>
 
-            <div id="social-footer">
-                <div>
-                    <div><a href="https://github.com/ChhaviArora1401" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <div><a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <div><a href="mailto: chhaviarora111@gmail.com"><i class="fas fa-at"></i></a></div>
-                </div>
-                <div>
-                    <div><a href="" target="_blank"> <i class="fab fa-slack-hash"></i></a></div>
-                </div>
             </div>
 
             <span id="cpy">&copy; Chhavi Arora, 2021 </span>
         </div>
+
+        <!-- Simple social icons -->
+
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
