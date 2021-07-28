@@ -106,7 +106,7 @@ header a:hover, .topnav a:hover {
 
 .container {
   margin-bottom: 5px;
-  background-color: rgba(243, 243, 243, 0.767);
+/*   background-color: rgba(243, 243, 243, 0.767); */
 }
 
 #intro {
