@@ -777,7 +777,7 @@ h1 {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.5% 2% 2% 2%;
+  padding: 0.5% 1% 2% 4.5%;
   height: 1100px;
 }
 
@@ -817,7 +817,7 @@ h2 {
   letter-spacing: 1.5px;
 }
 .timeline__event__content {
-  padding: 20px 20px 20px 40px;
+  padding: 20px 20px 20px 30px;
 }
 .timeline__event__date {
   color: #c89eeb;
