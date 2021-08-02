@@ -65,6 +65,11 @@ header {
   letter-spacing: 0.5px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .topnav {
   display: flex;
     background-color: black;
@@ -191,12 +196,6 @@ header a:hover, .topnav a:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.type {
-  margin-bottom: 2%;
-  font-size: 1.25em;
-  /* margin-left: 32%; */
 }
 
 #social {
@@ -359,8 +358,6 @@ hr {
 #info {
   height: 900px;
   padding: 8% 4% 4% 4%;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex: auto;
   width: 83%;
@@ -423,15 +420,22 @@ hr {
   -webkit-text-fill-color: transparent;
 }
 
+/* .tech {
+  
+} */
+
 .ico {
   display: flex;
-  height: 80px;
   justify-content: space-between;
 }
 
+.i-text {
+  display: flex;
+}
+
 .hov {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
 .hide {
@@ -439,8 +443,8 @@ hr {
   font-size: 0.8em;
   font-weight: bold;
   position: relative;
-  top: 75%;
-  left: -10%;
+  top: 10%;
+  /* left: -10%; */
   z-index: 1;
   background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91% );
   -webkit-background-clip: text;
@@ -762,6 +766,10 @@ h1 {
   height: 1100px;
 }
 
+#uic {
+  left: -12.7%;
+}
+
 h2 {
   margin: 5%;
   text-align: center;
@@ -774,7 +782,8 @@ h2 {
   flex-direction: column;
   width: 50vw;
   font-size: 14px;
-  margin: 5% auto;
+  margin-left: 17%;
+  /* margin: 0% 0% 0% 5%; */
   font-family: "Open Sans", sans-serif;
   color: #525f7f;
 }
@@ -1179,6 +1188,16 @@ input:focus, textarea:focus, select:focus{
   height: 550px;
 }
 
+#c-form-h1 {
+  text-align: left;
+    font-size: 3em;
+    width: 50%;
+    background-image: linear-gradient(40deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%,#ffa84b 91% );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 form input {
   width: 900%;
 }
@@ -1200,12 +1219,12 @@ footer a {
 
 #fb {
   width: 83%;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 #f {
-  width: 58%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1341,10 +1360,8 @@ footer a {
 @media (max-width: 767px) {
 /* Header */
 header {
-  width: 100%;
+  width: 99.7%;
 }
-
-
 
 .topnav a{display: none;}
   .topnav a.icon {
@@ -1378,11 +1395,15 @@ header {
     visibility: visible;
   }
 
+  #i-a {
+    margin-left: -6%;
+  }
+
   #intro {
     height: 690px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     padding: 8% 5% 2% 5%;
     font-size: 0.8em;
     background-image: url(images/bgw-mob.heic);
@@ -1392,7 +1413,7 @@ header {
 
   #self {
     margin: 0% 0% 0% 1%;
-    padding: 40% 0% 0% 3%;
+    padding: 30% 0% 0% 3%;
   }
 
   #name {
@@ -1420,12 +1441,12 @@ header {
   }
 
   #def {
-    width: 150%;
-    font-size: 1.3em;
+    width: 120%;
+    font-size: 1.5em;
   }
 
   #myBtn {
-    right: 9%;
+    right: 10%;
     z-index: 10;
     bottom: 6%;
     cursor: pointer;
@@ -1436,26 +1457,24 @@ header {
     border: 0;
     border-radius: 60px;
     font-size: 1.25em;
-    background-image: linear-gradient( 
-108deg
-, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91% );
+    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91% );
 }
 
-
   /* about */
-
   #info{
     /* width: 100%; */
     height: 1500px;
+    width: 83%;
     flex-direction: column;
     margin-bottom: 20%;
+    margin-left: 7%;
     padding: 1% 1% 5% 15;
   }
 
   #img1 img{
     width: 300px;
     height: 400px;
-    margin-left: 15%;
+    margin-left: -5%;
   }
 
   #ab-me {
@@ -1499,7 +1518,13 @@ header {
 
   .ico {
     display: flex;
-    height: 100px;
+    /* height: 100px; */
+    width: 310px;
+    justify-content: space-between;
+  }
+
+  .i-text {
+    display: flex;
     width: 300px;
     justify-content: space-between;
   }
@@ -1509,7 +1534,7 @@ header {
   #projects {
     height: 3000px;
     width: 90%;
-    margin-left: 19%;
+    /* margin-left: 19%; */
     margin-right: auto;
     margin-bottom: 20%;
   }
@@ -1525,26 +1550,23 @@ header {
   .more {
     margin-top: 2%;
     width: 100%;
-    margin-left: 3%;
+    margin-left: -3%;
   }
 
   /* education and work */
-
   h1 {
     text-align: left;
-    background-image: linear-gradient(
-40deg
-, #b16cea 8%, #ff5e69 40%, #ff8a56 77%,#ffa84b 91% );
+    background-image: linear-gradient(40deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%,#ffa84b 91% );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     /* text-align: center; */
-    width: 160%;
+    /* width: 160%; */
 }
 
   #edu{
     width: 80%;
-    margin-left: 12%;
+    /* margin-left: 12%; */
     height: 1625px;
     font-size: 0.8em;
   }
@@ -1554,18 +1576,22 @@ header {
     flex-direction: column;
     width: 50vw;
     font-size: 14px;
-    margin: 5% 0% 5% 20%;
+    margin: 5% 0% 5% 10%;
     font-family: "Open Sans", sans-serif;
     color: #525f7f;
 }
 
+#uic {
+  left: -37.7%;
+}
+
 .timeline__event {
   background: #fff;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
-  width: 110%;
+  width: 109%;
   display: flex;
-  margin: 2% 0% 0 -35%;
+  margin: 2% 0% 10% 35%;
   border-radius: 8px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   justify-content: space-between;
@@ -1579,11 +1605,11 @@ header {
   letter-spacing: 1.5px;
 }
 .timeline__event__content {
-  padding: 20px 20px 20px 30px;
+  padding: 20px 20px 20px 10px;
 }
 .timeline__event__date {
   color: #c89eeb;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -1603,7 +1629,7 @@ header {
 .timeline__event__icon i {
   position: absolute;
   top: 50%;
-  left: 111.3%;
+  left: -41%;
   font-size: 2.5rem;
   transform: translateY(-50%);
 }
@@ -1617,7 +1643,7 @@ header {
   background: #b16cea;
   position: absolute;
   top: 52%;
-  left: 110%;
+  left: -30%;
   z-index: -1;
 }
 .timeline__event:before {
@@ -1627,7 +1653,7 @@ header {
   position: absolute;
   background: #b16cea;
   border-radius: 100%;
-  left: 103.2%;
+  left: -50%;
   top: 50%;
   transform: translateY(-50%);
   border: 2px solid #9251ac;
@@ -1656,11 +1682,11 @@ header {
 
 .timeline__eventr {
   background: #fff;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
-  width: 110%;
+  width: 109%;
   display: flex;
-  margin: 2% 50% 0% 55%;
+  margin: 2% 50% 10% 35%;
   border-radius: 8px;
   box-shadow: 0 30px 60px -12px rgb(50 50 93 / 25%), 0 18px 36px -18px rgb(0 0 0 / 30%), 0 -12px 36px -8px rgb(0 0 0 / 3%);
 }
@@ -1677,7 +1703,7 @@ header {
 }
 .timeline__eventr__date {
   color: #c89eeb;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -1725,8 +1751,6 @@ header {
   border: 2px solid #9251ac;
 }
 
-
-
   /* textmonial */
 
   .testimonials {
@@ -1761,10 +1785,10 @@ header {
   /* conatct */
 
   #c-form-h1 {
-    color: cornflowerblue;
-    font-size: 3em;
-    margin-left: 10%;
-    width: 120%;
+    /* color: cornflowerblue; */
+    font-size: 2.5em;
+    /* margin-left: 10%; */
+    width: 100%;
 }
 
   #contact {
@@ -1782,10 +1806,14 @@ header {
     /* align-content: stretch; */
   }
 
+  form {    
+    margin-left: 0%;
+  }
+
   .wid{
     border-radius: 10px;
-    width: 110%;
-    margin-left: 15%;
+    width: 90%;
+    margin-left: 3%;
     height: 2.5em;
     font-size: 1em;
     margin-top: 1.5%;
@@ -1808,10 +1836,10 @@ header {
   
   .send {
     /* border-radius: 25px; */
-    width: 100%;
+    width: 90%;
     height: 70px;
     margin-top: 5%;
-    margin-left: 20%;
+    margin-left: 5%;
     font-size: 1.05em;
     padding: 0.5%;
     border: 2px solid #aaaaaa;
@@ -1826,7 +1854,7 @@ header {
  }
 
  footer {
-   width: 130%;
+   width: 100%;
    bottom: 0;
    height: 300px;
    font-size: 0.9em;
@@ -1841,6 +1869,15 @@ header {
   flex-direction: column;
  }
 
+ #f {
+   width: 76%;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   justify-content: space-between;
+   font-size: 15px;
+}
+
  #footer-items {
   /* margin-top: -16%; */
   display: flex;
@@ -1854,7 +1891,7 @@ header {
 
 #social-footer {
   margin-top: 10%;
-  width: 80%;
+  /* width: 80%; */
 }
 
 #social-footer div a {
@@ -1867,7 +1904,7 @@ header {
   /* margin-left: auto; */
   /* margin-right: auto; */
   margin-top: 5%;
-  margin-left: 35%;
+  margin-left: 30%;
 }
 
 }
