@@ -21,7 +21,7 @@
 
 </head>
 
-<style>
+<!-- <style>
     #overw {
         width: 100px;
         height: 100px;
@@ -86,7 +86,7 @@
         animation-duration: 4s;
         z-index: 35;
     }
-</style>
+</style> -->
 </head>
 <script>
     window.onload = function () { hide() };
@@ -146,8 +146,8 @@
                             </div>
                             <div>
                                 <div class="grd"></div>
-                                <a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank"></a>
-                                <div class="l"></div>
+                                <a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank">
+                                    <div class="l"></div>
                                 </a>
                             </div>
                             <div>
@@ -158,7 +158,8 @@
                             </div>
                             <div>
                                 <div class="grd"></div>
-                                <a href="" target="_blank">
+                                <a href="https://app.slack.com/client/TCYEB44S2/D02973WGV7E/user_profile/U022B11NY23"
+                                    target="_blank">
                                     <div class="sl"></div>
                                 </a>
                             </div>
@@ -321,7 +322,7 @@
                         </div>
                         <div class="col" ontouchstart="this.classList.toggle('hover');">
                             <div class="p-tilesr">
-                                <div class="front" style="background-image: url();">
+                                <div class="front" style="background-image: url('images/calc.png');">
                                     <div class="inner">
                                         <p>Calculator</p>
                                         <span>.</span>
@@ -329,7 +330,8 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                        <p><a href="https://chhaviarora1401.github.io/js-calc/" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i></a>
                                         </p>
                                     </div>
                                 </div>
@@ -353,7 +355,7 @@
                         </div>
                         <div class="col" ontouchstart="this.classList.toggle('hover');">
                             <div class="p-tiles">
-                                <div class="front" style="background-image: url">
+                                <div class="front" style="background-image: url('images/port.png')">
                                     <div class="inner">
                                         <p>Landing Page</p>
                                         <span>.</span>
@@ -361,7 +363,8 @@
                                 </div>
                                 <div class="back">
                                     <div class="inner">
-                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                        <p><a href="https://chhaviarora1401.github.io/MyPortfolio/" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i></a>
                                         </p>
                                     </div>
                                 </div>
@@ -369,9 +372,26 @@
                         </div>
                         <div class="col" ontouchstart="this.classList.toggle('hover');">
                             <div class="p-tiles">
+                                <div class="front" style="background-image: url('images/clock.png')">
+                                    <div class="inner">
+                                        <p>Clock</p>
+                                        <span>.</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p><a href="https://chhaviarora1401.github.io/Analog-Clock/" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="p-tiles">
                                 <div class="front" style="background-image: url">
                                     <div class="inner">
-                                        <p>@</p>
+                                        <p>@@</p>
                                         <span>.</span>
                                     </div>
                                 </div>
@@ -382,23 +402,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col" ontouchstart="this.classList.toggle('hover');">
-                            <div class="p-tiles">
-                                <div class="front" style="background-image: url">
-                                    <div class="inner">
-                                        <p>#</p>
-                                        <span>.</span>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p><a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="more"><a href="https://github.com/ChhaviArora1401?tab=repositories"
@@ -545,6 +549,8 @@
                         Let's get on a call.<i class="fas fa-hands-helping"></i>
                     </h1>
                     <form action="https://formsubmit.co/chhaviarora1401@gmail.com" method="POST">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_subject" value="New submission!">
                         <div>
                             <input type="text" class="wid" name="name" placeholder="Name" required>
                         </div>
@@ -553,8 +559,7 @@
                         </div>
                         <div>
                             <input type="text" class="wid" name="subject" placeholder="Subject" required>
-                            <input type="hidden" name="_next"
-                                value="https://chhaviarora1401.github.io/MyPortfolio/#contact">
+
                         </div>
 
                         <div><textarea name="message" rows="8" cols="24" style="font-family:'Noto Sans', sans-serif;"
@@ -564,6 +569,8 @@
                             <button class="send" type="submit" value="Submit"><span>Send <i
                                         class="fas fa-paper-plane"></i></span></button>
                         </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="/#contact">
                     </form>
 
                 </div>
@@ -589,7 +596,8 @@
                     <li><a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank" class="icon"><i
                                 class="fab fa-linkedin-in"></i></a></li>
                     <li><a href="mailto: chhaviarora1401@gmail.com" class="icon"><i class="fas fa-at"></i></a></li>
-                    <li><a href="" class="icon"><i class="fab fa-slack-hash"></i></a></li>
+                    <li><a href="https://app.slack.com/client/TCYEB44S2/D02973WGV7E/user_profile/U022B11NY23"
+                            class="icon"><i class="fab fa-slack-hash"></i></a></li>
                 </ul>
             </div>
             <div id="footer-items">
@@ -597,7 +605,7 @@
                     <a href="#info">About</a>
                 </span>
                 <span>
-                    <a href="twitter.com">Twitter</a>
+                    <a href="https://twitter.com/chhaviarora1496">Twitter</a>
                 </span>
             </div>
 
