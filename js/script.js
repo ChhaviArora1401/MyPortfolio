@@ -46,3 +46,11 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+
+function close() {
+    var x = document.getElementById("myTopnav");
+
+    x.className = "topnav";
+
+}

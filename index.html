@@ -15,79 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-
 </head>
 
-<!-- <style>
-    #overw {
-        width: 100px;
-        height: 100px;
-        left: 600px;
-        top: 200px;
-        background-color: rgb(253, 252, 252);
-        position: absolute;
-        color: rgb(109, 83, 83);
-        animation-name: example;
-        animation-duration: 4s;
-        animation-delay: 2s;
-        z-index: 35;
-    }
-
-    @keyframes example {
-        0% {
-            background-color: rgb(200, 255, 0);
-            left: 600px;
-            top: 200px;
-            opacity: 0.9;
-        }
-
-        25% {
-            background-color: rgb(0, 247, 255);
-            left: 800px;
-            top: 200px;
-            opacity: 0.8;
-        }
-
-        50% {
-            background-color: rgb(204, 0, 255);
-            left: 800px;
-            top: 400px;
-            opacity: 0.7;
-        }
-
-        75% {
-            background-color: green;
-            left: 600px;
-            top: 400px;
-            opacity: 0.6;
-        }
-
-        100% {
-            background-color: rgb(0, 183, 255);
-            left: 600px;
-            top: 200px;
-            opacity: 0.3;
-        }
-    }
-
-    .over {
-        width: 100px;
-        height: 100px;
-        left: 800px;
-        top: 200px;
-        opacity: 0;
-        background-color: rgb(253, 252, 252);
-        position: absolute;
-        color: rgb(109, 83, 83);
-        animation-name: example;
-        animation-duration: 4s;
-        z-index: 35;
-    }
-</style> -->
-</head>
 <script>
     window.onload = function () { hide() };
     var mybutton = document.getElementById("myBtn");
@@ -108,19 +42,19 @@
         <nav>
             <span id="logo"> <a href="#">Chhavi</a> </span>
             <div class="topnav" id="myTopnav">
-
                 <span>
                     <a href="#info">About</a>
                     <a href="#projects">Projects</a>
                     <a href="docs/Chhavi_Arora_Resume.pdf" target="_blank">CV</a>
                     <a href="#contact">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        @
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()" onblur="close()">
+                        <i class="fas fa-bars"></i>
                     </a>
                 </span>
             </div>
         </nav>
     </header>
+
     <div id="main-content">
         <div class="container">
             <div id="intro">
@@ -135,41 +69,39 @@
                     <div id="def">
                         <i class="fas fa-code"></i> I am a front end developer.<i class="fas fa-code"></i>
                     </div>
-                    <div id="s-box" style="width: 25%;">
-                        <hr>
-                        <div id="social">
-                            <div>
-                                <div class="grd"> </div>
-                                <a href="https://github.com/ChhaviArora1401" target="_blank">
-                                    <div class="g"></div>
-                                </a>
+                    <div class="social-btns">
+                        <div id="s-box" style="width: 25%;">
+                            <hr>
+                            <div id="social">
+                                <div>
+                                    <div class="grd"> </div>
+                                    <a class="btn facebook" href="https://github.com/ChhaviArora1401" target="_blank"><i
+                                            class="fab fa-github-square"></i></a>
+                                </div>
+                                <div>
+                                    <div class="grd"></div>
+                                    <a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank"
+                                        class="btn twitter">
+                                        <ion-icon class="fab" name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="grd"></div>
+                                    <a href="mailto:chhaviarora1401@gmail.com" class="btn google"><i
+                                            class="fab fa-google"></i></a>
+                                </div>
+                                <div>
+                                    <div class="grd"></div>
+                                    <a href="https://app.slack.com/client/TCYEB44S2/D02973WGV7E/user_profile/U022B11NY23"
+                                        target="_blank" class="btn dribbble"><i class="fab fa-slack"></i></a>
+                                </div>
                             </div>
-                            <div>
-                                <div class="grd"></div>
-                                <a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank">
-                                    <div class="l"></div>
-                                </a>
-                            </div>
-                            <div>
-                                <div class="grd"></div>
-                                <a href="mailto:chhaviarora1401@gmail.com">
-                                    <div class="m"></div>
-                                </a>
-                            </div>
-                            <div>
-                                <div class="grd"></div>
-                                <a href="https://app.slack.com/client/TCYEB44S2/D02973WGV7E/user_profile/U022B11NY23"
-                                    target="_blank">
-                                    <div class="sl"></div>
-                                </a>
-                            </div>
+                            <hr style="margin-top: 40px;">
                         </div>
-                        <hr style="margin-top: 40px;">
                     </div>
                     <div>
                         <p class="type anim-typewriter"><i class="fas fa-quote-left"></i> Coding is love and
-                            coffee is
-                            life! <i class="fas fa-quote-right"></i></p>
+                            coffee is life! <i class="fas fa-quote-right"></i></p>
                     </div>
                 </div>
             </div>
@@ -234,12 +166,9 @@
                     </div>
                     <div>
                         <span class="intro-sub"> Certifications</span> <br>
-                        <div class="space"></div>
-                        HTML,
-                        CSS, and Javascript for Web Developers<br> by Coursera, <a
-                            href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
-                            link&amp;utm_medium=certificate&amp;utm_content=cert_image&amp;utm_campaign=sharing_cta&amp;utm_product=course" target="_blank"
-                            style="color: #b16cea;">here</a>.
+                        <div class="space"></div> HTML, CSS, and Javascript for Web Developers<br> by Coursera, <a href="https://www.coursera.org/account/accomplishments/verify/W78XRLLAQG7K?utm_source=
+                            link&amp;utm_medium=certificate&amp;utm_content=cert_image&amp;utm_campaign=sharing_cta
+                            &amp;utm_product=course" target="_blank" style="color: #b16cea;">here</a>.
                     </div>
                 </div>
                 <div id="vl" style="color: transparent; height: 300px; margin-top: auto;
@@ -248,12 +177,13 @@
                 <div id="img1" style="padding-top: 2%;">
                     <img src="images/a.jpg" height="500px" width="400px">
                 </div>
-
             </div>
         </div>
+
         <div class="container">
             <div id="projects">
-                <div id="p-title"><i class="far fa-file-code"></i> Projects</div>
+
+                <div id="p-title"><span id="p-icon"><i class="far fa-file-code"></i></span> Projects</div>
                 <div class="wrapper">
                     <div class="cols">
                         <div class="col" ontouchstart="this.classList.toggle('hover');">
@@ -409,11 +339,11 @@
                         target="_blank"><span>See more on Github.</span></a>
                 </div>
             </div>
-
         </div>
+
         <div class="container">
             <div id="edu">
-                <h1><i class="fas fa-university"></i> Educational Background <br>
+                <h1> <span id="edu-icon"><i class="fas fa-university"></i></span> Educational Background <br>
                     &amp Work Experience</h1>
                 <div class="timeline">
                     <div class="timeline__eventr animated fadeInUp delay-2s timeline__event--type1">
@@ -437,7 +367,6 @@
                         </div>
                     </div>
                     <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
-
                         <div class="timeline__event__content ">
                             <div class="timeline__event__title">
                                 <b>Internship</b>
@@ -473,9 +402,7 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
-
                         <div class="timeline__event__content ">
                             <div class="timeline__event__title">
                                 <b>12<sup style="text-transform: lowercase;
@@ -540,6 +467,7 @@
 
             </div>
         </div> -->
+
         <div class="container">
             <div id="contact">
                 <div id="c-form">
@@ -570,11 +498,10 @@
                                         class="fas fa-paper-plane"></i></span></button>
                         </div>
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="/#contact">
+                        <input type="hidden" name="_next"
+                            value="https://chhaviarora1401.github.io/MyPortfolio/#contact">
                     </form>
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -608,18 +535,10 @@
                     <a href="https://twitter.com/chhaviarora1496">Twitter</a>
                 </span>
             </div>
-
         </div>
-
-        <span id="cpy"><a href="https://github.com/ChhaviArora1401" target="_blank">&copy; Coded by Chhavi Arora,
-                2021</a> </span>
-
-
-        <!-- Simple social icons -->
-
+        <div id="cpy"><a href="https://github.com/ChhaviArora1401" target="_blank">&copy; Coded by Chhavi Arora,
+                2021</a> </div>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/script.js"></script>
 </body>
 
