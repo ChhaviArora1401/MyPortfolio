@@ -505,6 +505,7 @@ ion-icon {
   font-size: 1.5em;
   margin-top: 0.2%;
   position: absolute;
+  text-rendering: optimizeLegibility;
   background-image: linear-gradient(
     108deg,
     #b16cea 8%,
