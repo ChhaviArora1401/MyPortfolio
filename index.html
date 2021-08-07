@@ -17,9 +17,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <script>
@@ -476,9 +476,10 @@
                         <br>
                         Let's get on a call.<i class="fas fa-hands-helping"></i>
                     </h1>
-                    <form action="https://formsubmit.co/chhaviarora1401@gmail.com" method="POST">
-                        <input type="hidden" name="_template" value="box">
-                        <input type="hidden" name="_subject" value="New submission!">
+                    <form id="ajax-contact" method="post" action="mailer.php">
+                        <!-- <form action="https://formsubmit.co/chhaviarora1401@gmail.com" method="POST"> -->
+                        <!-- <input type="hidden" name="_template" value="box"> -->
+                        <!-- <input type="hidden" name="_subject" value="New submission!"> -->
                         <div>
                             <input type="text" class="wid" name="name" placeholder="Name" required>
                         </div>
@@ -497,9 +498,9 @@
                             <button class="send" type="submit" value="Submit"><span>Send <i
                                         class="fas fa-paper-plane"></i></span></button>
                         </div>
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next"
-                            value="https://chhaviarora1401.github.io/MyPortfolio/#contact">
+                        <!-- <input type="hidden" name="_captcha" value="false"> -->
+                        <!-- <input type="hidden" name="_next"
+                            value="https://chhaviarora1401.github.io/MyPortfolio/#contact"> -->
                     </form>
                 </div>
             </div>
