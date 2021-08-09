@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #overw {
+ #overw {
   width: 100px;
   height: 100px;
   left: 600px;
@@ -17,8 +17,8 @@ html {
   position: absolute;
   color: rgb(109, 83, 83);
   animation-name: example;
-  animation-duration: 4s;
-  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   z-index: 35;
 }
 
@@ -64,12 +64,12 @@ html {
   height: 100px;
   left: 800px;
   top: 200px;
-  opacity: 0;
+  display: none;
   background-color: rgb(253, 252, 252);
   position: absolute;
   color: rgb(109, 83, 83);
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 1s;
   z-index: 35;
 }
 
@@ -83,8 +83,27 @@ html {
   text-align: center;
   animation-name: exam;
   background-color: white;
-  z-index: 99;
-} */
+  z-index: 30;
+  animation: loadingsc 4s 1;
+  -webkit-animation: loadingsc 4s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  /* Safari and Chrome */
+  
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes loadingsc {
+    from {
+        display: block;
+    }
+
+    to {
+        display: hide;
+    }
+} 
+
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -297,8 +316,8 @@ hr {
 }
 
 .social-btns .btn:before {
-  top: 90%;
-  left: -110%;
+  top: 102%;
+  left: -120%;
 }
 
 .social-btns i,
@@ -395,7 +414,7 @@ ion-icon {
   width: 120%;
   height: 120%;
   position: absolute;
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
 }
 
 .social-btns .btn .fa {
@@ -1605,17 +1624,8 @@ footer a {
   #ab-me {
     font-size: 3rem;
     margin-top: 0.25%;
-    position: absolute;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    position: absolute;   
+    -webkit-text-fill-color: black;
   }
 
   .info-sub {
@@ -2161,16 +2171,7 @@ footer a {
     font-size: 2em;
     margin-top: 0.1%;
     position: absolute;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: black;
   }
 
   .info-sub {
@@ -2710,16 +2711,8 @@ footer a {
     font-size: 2em;
     margin-top: 0.1%;
     position: absolute;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    position: absolute;
+    -webkit-text-fill-color: black;
   }
 
   .info-sub {
@@ -3297,16 +3290,8 @@ footer a {
     font-size: 2em;
     margin-top: 0.1%;
     position: absolute;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    position: absolute;
+    -webkit-text-fill-color: black;
   }
 
   .info-sub {
@@ -3873,16 +3858,8 @@ footer a {
     font-size: 1.5em;
     margin-top: 1.2%;
     position: absolute;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    position: absolute;
+    -webkit-text-fill-color: black;
   }
 
   .info-sub {
@@ -4437,20 +4414,12 @@ footer a {
     font-size: 1.5em;
     margin-top: 1.2%;
     position: absolute;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    position: absolute;
+    -webkit-text-fill-color: black;
   }
 
   .info-sub {
-    font-size: 2em;
+    font-size: 2.5rem;
     width: 80%;
     float: right;
     margin-right: 4%;
@@ -4796,6 +4765,8 @@ footer a {
     background-color: rgb(76, 161, 231);
     color: white;
   }
+
+  
 
   iframe {
     margin-top: 30%;
