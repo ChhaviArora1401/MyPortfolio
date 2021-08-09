@@ -490,9 +490,9 @@
                         Let's get on a call.<i class="fas fa-hands-helping"></i>
                     </h1>
                     <form id="my-form" action="https://formspree.io/f/xwkarzdk" method="POST">
-                        <div>
+<!--                         <div>
                             <input type="text" class="wid" name="name" placeholder="Name" required>
-                        </div>
+                        </div> -->
                         <div>
                             <input type="email" class="wid" name="email" placeholder="E-mail address" required />
                         </div>
@@ -607,7 +607,7 @@
                                 }
                             }).then(response => {
                                 status.className = "success";
-                                status.innerHTML = "<i class='fas fa-paper-plane'></i> Thanks for your submission!";
+                                status.innerHTML = "<i class='fas fa-paper-plane'></i> <br>Thanks for your submission!";
                                 form.reset()
                             }).catch(error => {
                                 status.className = "error";
