@@ -982,7 +982,7 @@ h1 {
 }
 
 #uic {
-  left: -14.5%;
+  left: -14%;
 }
 
 h2 {
@@ -1006,9 +1006,9 @@ h2 {
   background: #fff;
   margin-bottom: 20px;
   position: relative;
-  width: 75%;
+  width: 70%;
   display: flex;
-  margin: 2% 0% 0 -35%;
+  margin: 2% 0% 0 -31%;
   border-radius: 8px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -1045,7 +1045,7 @@ h2 {
 .timeline__event__icon i {
   position: absolute;
   top: 50%;
-  left: 104.7%;
+  left: 105.2%;
   font-size: 2.5rem;
   transform: translateY(-50%);
 }
@@ -1069,7 +1069,7 @@ h2 {
   position: absolute;
   background: #b16cea;
   border-radius: 100%;
-  left: 101.2%;
+  left: 102.2%;
   top: 50%;
   transform: translateY(-50%);
   border: 2px solid #9251ac;
@@ -1108,9 +1108,9 @@ h2 {
   background: #fff;
   margin-bottom: 20px;
   position: relative;
-  width: 75%;
+  width: 70%;
   display: flex;
-  margin: 2% 50% 0% 55%;
+  margin: 2% 50% 0% 53%;
   border-radius: 8px;
   box-shadow: 0 30px 60px -12px rgb(50 50 93 / 25%),
     0 18px 36px -18px rgb(0 0 0 / 30%), 0 -12px 36px -8px rgb(0 0 0 / 3%);
@@ -1146,7 +1146,7 @@ h2 {
 .timeline__eventr__icon i {
   position: absolute;
   top: 50%;
-  left: -15%;
+  left: -14.5%;
   font-size: 2.5rem;
   transform: translateY(-50%);
 }
@@ -1170,7 +1170,7 @@ h2 {
   position: absolute;
   background: #b16cea;
   border-radius: 100%;
-  left: -19%;
+  left: -18%;
   top: 50%;
   transform: translateY(-50%);
   border: 2px solid #9251ac;
@@ -1263,7 +1263,7 @@ h2 {
 .wid {
   border-radius: 10px;
   margin-left: 30%;
-  width: 180%;
+  width: 80%;
   height: 3em;
   font-size: 1em;
   margin-top: 10%;
@@ -1292,7 +1292,7 @@ select:focus {
 
 .send {
   border-radius: 6px;
-  width: 150%;
+  width: 50%;
   margin-top: 5%;
   margin-left: 45%;
   height: 2.1em;
@@ -4761,12 +4761,22 @@ footer a {
     margin-left: 5%;
     font-size: 1.05em;
     padding: 0.5%;
-    border: 2px solid #aaaaaa;
-    background-color: rgb(76, 161, 231);
     color: white;
+  } 
+  
+  .success {
+    height: 220px;
+    margin-left: 3%;
+    width: 250px;
+    margin-top: -62%;
   }
 
-  
+  .error {
+    height: 220px;
+    margin-left: 3%;
+    width: 250px;
+    margin-top: -62%;
+  }
 
   iframe {
     margin-top: 30%;

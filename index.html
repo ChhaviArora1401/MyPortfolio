@@ -18,8 +18,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-2.1.0.min.js"></script>
-    <script src="app.js"></script>
 </head>
 
 <script>
@@ -489,45 +487,38 @@
                         <br>
                         Let's get on a call.<i class="fas fa-hands-helping"></i>
                     </h1>
-                    <form id="my-form" action="https://formspree.io/f/xwkarzdk" method="POST">
-                        <div>
-                            <input type="text" class="wid" name="name" placeholder="Name" required>
-                        </div>
-                        <div>
-                            <input type="email" class="wid" name="email" placeholder="E-mail address" required />
-                        </div>
-                        <div>
-                            <input type="text" name="message" class="wid a" placeholder="Message" required />
-                        </div>
+                    <form id="my-form" action="https://formspree.io/f/xwkarzd" method="POST">
+                        <input type="email" name="email" class="wid" placeholder="Email address" />
+                        <input type="text" class="wid a" placeholder="Message" name="message" />
                         <button id="my-form-button" class="send"><span>Send <i
                                     class="fas fa-paper-plane"></i></span></button>
-                        <div id="my-form-status"></div>
+                        <div id="my-form-status"> </div>
                     </form>
+
                     <style>
                         .error {
-                            z-index: 3;
-                            background: white;
-                            height: 220px;
+                            background-color: #ffffff;
+                            /* z-index: 3;
+                            height: 260px;
+                            margin-left: 1%;
                             font-size: 2rem;
                             position: absolute;
-                            width: 400px;
-                            margin-top: -8%;
+                            width: 274px;
+                            margin-top: -66%;
                             border-radius: 25px;
-                            padding: 1%;
+                            padding: 1%; */
                             color: red;
-                            border: 1px solid red;
+                            border: 4px solid red;
                             text-align: center;
-                            animation: signup-response 0.5s 1;
+                            /* animation: signup-response 0.5s 1;
                             -webkit-animation: signup-response 0.5s 1;
                             animation-fill-mode: forwards;
-
                             animation-delay: 2s;
                             -webkit-animation-delay: 1s;
-                            /* Safari and Chrome */
-                            -webkit-animation-fill-mode: forwards;
+                            -webkit-animation-fill-mode: forwards; */
                         }
 
-                        @keyframes signup-response {
+                        /* @keyframes signup-response {
                             from {
                                 opacity: 1;
                             }
@@ -545,31 +536,31 @@
                             to {
                                 opacity: 0;
                             }
-                        }
+                        } */
 
                         .success {
-                            background-color: #b1faaf;
+                            background-color: #ffffff;
                             z-index: 3;
-                            height: 220px;
+                            height: 260px;
+                            margin-left: 1%;
                             font-size: 2rem;
                             position: absolute;
-                            width: 400px;
-                            margin-top: -8%;
+                            width: 274px;
+                            margin-top: -10%;
                             border-radius: 25px;
                             padding: 1%;
                             color: rgb(21, 255, 0);
-                            border: 1px solid rgb(0, 255, 64);
+                            border: 4px solid rgb(0, 255, 64);
                             text-align: center;
-                            animation: signup-response 0.5s 1;
+                            /* animation: signup-response 0.5s 1;
                             -webkit-animation: signup-response 0.5s 1;
                             animation-fill-mode: forwards;
                             animation-delay: 2s;
                             -webkit-animation-delay: 1s;
-                            /* Safari and Chrome */
-                            -webkit-animation-fill-mode: forwards;
+                            -webkit-animation-fill-mode: forwards; */
                         }
 
-                        @keyframes signup-response {
+                        /* @keyframes signup-response {
                             from {
                                 opacity: 1;
                             }
@@ -586,12 +577,11 @@
 
                             to {
                                 opacity: 0;
-                            }
-                        }
+                            }                            
+                        } */
                     </style>
 
-                    <!-- Place this script at the end of the body tag -->
-
+                    <!--Place this script at the end of the body tag -->
                     <script>
                         var form = document.getElementById("my-form");
 
@@ -603,15 +593,15 @@
                                 method: form.method,
                                 body: data,
                                 headers: {
-                                    ' Accept': 'application/json'
+                                    'Accept': 'application/json'
                                 }
                             }).then(response => {
                                 status.className = "success";
-                                status.innerHTML = "<i class='fas fa-paper-plane'></i> Thanks for your submission!";
+                                status.innerHTML = "Thanks for reaching out to me! <br> <i class='fas fa-check'></i>";
                                 form.reset()
                             }).catch(error => {
                                 status.className = "error";
-                                status.innerHTML = "<i class='fas fa-exclamation-triangle'></i> <br>Oops! There was a problem submitting your form!!";
+                                status.innerHTML = "Oops! There was a problem. Try again!! <br> <i class='fas fa-exclamation-triangle'></i>";
                             });
                         }
                         form.addEventListener("submit", handleSubmit)
