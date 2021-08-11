@@ -45,7 +45,8 @@
                     <a href="#projects">Projects</a>
                     <a href="docs/Chhavi_Arora_Resume.pdf" target="_blank">CV</a>
                     <a href="#contact">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()" onblur="close()">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+                        onblur="setTimeout(function() {myFunction();},400);">
                         <i class="fas fa-bars"></i>
                     </a>
                 </span>
@@ -357,22 +358,21 @@
                 <h1> <span id="edu-icon"><i class="fas fa-university"></i></span> Educational Background <br>
                     &amp Work Experience</h1>
                 <div class="timeline">
-                    <div class="timeline__eventr animated fadeInUp delay-2s timeline__event--type1">
-                        <div class="timeline__eventr__icon">
+                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type1">
+                        <div class="timeline__event__icon">
                             <i class="fas fa-university" id="uic"></i>
-                            <div class="timeline__eventr__date">
+                            <div class="timeline__event__date">
                                 Apr'21-Present
                             </div>
                         </div>
-                        <div class="timeline__eventr__content">
-                            <div class="timeline__eventr__title">
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
                                 <b>Web <span id="dev">Development</span> Team</b>
                             </div>
-                            <div class="timeline__eventr__description">
+                            <div class="timeline__event__description">
                                 <p>
-                                    Team Member<br> ACE- Association for Computer Enthusiasts,<br> Technical Society
-                                    of
-                                    VIPS
+                                    Team Member at ACE- Association for <br> Computer Enthusiasts, <br>Technical Society
+                                    of VIPS
                                 </p>
                             </div>
                         </div>
@@ -396,28 +396,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="timeline__eventr animated fadeInUp delay-1s timeline__event--type1">
-                        <div class="timeline__eventr__icon">
+                    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type1">
+                        <div class="timeline__event__icon">
                             <i class="fas fa-graduation-cap"></i>
-                            <div class="timeline__eventr__date">
+                            <div class="timeline__event__date">
                                 Aug'19-Present
                             </div>
                         </div>
-                        <div class="timeline__eventr__content">
-                            <div class="timeline__eventr__title">
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
                                 <b>College</b>
                             </div>
-                            <div class="timeline__eventr__description">
+                            <div class="timeline__event__description">
                                 <p>Vivekananda Institute of Professional Studies <br>
                                     Bacherlors of Computer Application</p>
                             </div>
+
                         </div>
                     </div>
                     <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
                         <div class="timeline__event__content ">
                             <div class="timeline__event__title">
                                 <b>12<sup style="text-transform: lowercase;
-                                    font-size: 0.7em;">th</sup> Standard</b>
+                                                            font-size: 0.7em;">th</sup> Standard</b>
                             </div>
                             <div class="timeline__event__description">
                                 <p>Brilliant's Convent School <br>
@@ -431,23 +432,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="timeline__eventr  animated fadeInUp delay-3s timeline__event--type1">
-                        <div class="timeline__eventr__icon ">
+                    <div class="timeline__event animated fadeInUp timeline__event--type1">
+                        <div class="timeline__event__icon">
                             <i class="fas fa-school"></i>
-                            <div class="timeline__eventr__date">
+                            <div class="timeline__event__date">
                                 Apr'16- Apr'17
                             </div>
                         </div>
-                        <div class="timeline__eventr__content ">
-                            <div class="timeline__eventr__title">
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
                                 <b>10<sup style="text-transform: lowercase;
-                                    font-size: 0.7em;">th</sup> Standard</b>
+                                                            font-size: 0.7em;">th</sup> Standard</b>
                             </div>
-                            <div class="timeline__eventr__description">
+                            <div class="timeline__event__description">
                                 <p>Brilliant's Convent School<br>CBSE </p>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -487,22 +489,9 @@
                         <br>
                         Let's get on a call.<i class="fas fa-hands-helping"></i>
                     </h1>
-<<<<<<< HEAD
                     <form id="my-form" action="https://formspree.io/f/xwkarzd" method="POST">
                         <input type="email" name="email" class="wid" placeholder="Email address" />
                         <input type="text" class="wid a" placeholder="Message" name="message" />
-=======
-                    <form id="my-form" action="https://formspree.io/f/xwkarzdk" method="POST">
-<!--                         <div>
-                            <input type="text" class="wid" name="name" placeholder="Name" required>
-                        </div> -->
-                        <div>
-                            <input type="email" class="wid" name="email" placeholder="E-mail address" required />
-                        </div>
-                        <div>
-                            <input type="text" name="message" class="wid a" placeholder="Message" required />
-                        </div>
->>>>>>> 415014193ab2df42aecd7769a73b66e89748d0d8
                         <button id="my-form-button" class="send"><span>Send <i
                                     class="fas fa-paper-plane"></i></span></button>
                         <div id="my-form-status"> </div>
@@ -610,11 +599,7 @@
                                 }
                             }).then(response => {
                                 status.className = "success";
-<<<<<<< HEAD
                                 status.innerHTML = "Thanks for reaching out to me! <br> <i class='fas fa-check'></i>";
-=======
-                                status.innerHTML = "<i class='fas fa-paper-plane'></i> <br>Thanks for your submission!";
->>>>>>> 415014193ab2df42aecd7769a73b66e89748d0d8
                                 form.reset()
                             }).catch(error => {
                                 status.className = "error";

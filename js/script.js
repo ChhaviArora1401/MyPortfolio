@@ -46,3 +46,29 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function close() {
+    var x = document.getElementById("myTopnav");
+
+    function set() {
+        setTimeout(function () {
+            undropdown(0);
+        }, 100);
+    }
+}
+
+// $(document).ready(function () {
+//     console.log('ready');
+//     $('#lorem-ipsum-wrapper').css('display', 'none');
+
+//     $('#content').on("focus", function (event) {
+//         $('#lorem-ipsum-wrapper').css('display', 'block');
+//     });
+
+//     $('#content').on("blur", function () {
+//         $('#lorem-ipsum-wrapper').css("display", "none");
+//     });
+//     $('#lorem-ipsum-wrapper').on("click", function () {
+//         $(this).css("display", "block");
+//     });
+// });
