@@ -707,28 +707,14 @@ font-size: 3rem;
 }
 
 .back {
-  background: #cedce7;
-  background: -webkit-linear-gradient(
+   background: -o-linear-gradient(
     108deg,
     #b16cea 8%,
     #ff5e69 40%,
     #ff8a56 77%,
     #ffa84b 91%
   );
-  background: -o-linear-gradient(
-    108deg,
-    #b16cea 8%,
-    #ff5e69 40%,
-    #ff8a56 77%,
-    #ffa84b 91%
-  );
-  background: linear-gradient(
-    108deg,
-    #b16cea 8%,
-    #ff5e69 40%,
-    #ff8a56 77%,
-    #ffa84b 91%
-  );
+  
 }
 
 .front:after {
