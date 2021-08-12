@@ -319,21 +319,22 @@
                         </div>
                         <!-- <div class="col" ontouchstart="this.classList.toggle('hover');">
                             <div class="p-tiles">
-                                <a href="" target="_blank">
-                                    <div class="front" style="background-image: url">
+                                <a href="https://chhaviarora1401.github.io/Analog-Clock/" target="_blank">
+                                    <div class="front" style="background-image: url('images/clock.png')">
                                         <div class="inner">
-                                            <p>@@</p>
+                                            <p>Clock</p>
                                             <span>.</span>
                                         </div>
                                     </div>
-                                    <div class="back">
+                                    <div class="back" style="background-image: url('images/clock.png')">
                                         <div class="inner">
-                                            <p><i class="fas fa-external-link-alt"></i> </p>
+                                            </p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         </div> -->
+
                     </div>
                 </div>
                 <div class="more"><a href="https://github.com/ChhaviArora1401?tab=repositories"
@@ -348,7 +349,7 @@
                 <h1> <span id="edu-icon"><i class="fas fa-university"></i></span> Educational Background <br>
                     &amp Work Experience</h1>
                 <div class="timeline">
-                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type1">
+                    <div class="timeline__event timeline__event--type1">
                         <div class="timeline__event__icon">
                             <i class="fas fa-university" id="uic"></i>
                             <div class="timeline__event__date">
@@ -367,7 +368,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
+                    <div class="timeline__event timeline__event--type2">
                         <div class="timeline__event__content ">
                             <div class="timeline__event__title">
                                 <b>Internship</b>
@@ -386,7 +387,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type1">
+                    <div class="timeline__event timeline__event--type1">
                         <div class="timeline__event__icon">
                             <i class="fas fa-graduation-cap"></i>
                             <div class="timeline__event__date">
@@ -401,18 +402,16 @@
                                 <p>Vivekananda Institute of Professional Studies <br>
                                     Bacherlors of Computer Application</p>
                             </div>
-
                         </div>
                     </div>
-                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
+                    <div class="timeline__event timeline__event--type2">
                         <div class="timeline__event__content ">
                             <div class="timeline__event__title">
                                 <b>12<sup style="text-transform: lowercase;
                                                             font-size: 0.7em;">th</sup> Standard</b>
                             </div>
                             <div class="timeline__event__description">
-                                <p>Brilliant's Convent School <br>
-                                    CBSE </p>
+                                <p>Brilliant's Convent School <br>CBSE </p>
                             </div>
                         </div>
                         <div class="timeline__event__icon">
@@ -422,7 +421,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="timeline__event animated fadeInUp timeline__event--type1">
+                    <div class="timeline__event timeline__event--type1" style="justify-content: flex-start;">
+                        <div class="timeline__event__icon">
+                            <i class="fas fa-school"></i>
+                            <div class="timeline__event__date">
+                                Apr'16- Apr'17
+                            </div>
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                <b>10<sup style="text-transform: lowercase;
+                                    font-size: 0.7em;"></sup>th</sup> Standard</b>
+                            </div>
+                            <div class=" timeline__event__description">
+                                <p>Brilliant's Convent School <br>CBSE </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="timeline__event animated fadeInUp timeline__event--type1">
                         <div class="timeline__event__icon">
                             <i class="fas fa-school"></i>
                             <div class="timeline__event__date">
@@ -435,11 +451,10 @@
                                                             font-size: 0.7em;">th</sup> Standard</b>
                             </div>
                             <div class="timeline__event__description">
-                                <p>Brilliant's Convent School<br>CBSE </p>
+                                <p>Brilliant's Convent School <br>CBSE </p>
                             </div>
                         </div>
-                    </div>
-
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -590,6 +605,7 @@
                             }).then(response => {
                                 status.className = "success";
                                 status.innerHTML = "Thanks for reaching out to me! <br> <i class='fas fa-check'></i>";
+                                status.setTimeout = 500;
                                 form.reset()
                             }).catch(error => {
                                 status.className = "error";

@@ -18,6 +18,7 @@ html {
   color: rgb(109, 83, 83);
   animation-name: example;
   animation-duration: 1s;
+  transition-duration: 5s;
   animation-delay: 1s;
   z-index: 35;
 }
@@ -71,6 +72,7 @@ html {
   animation-name: example;
   animation-duration: 1s;
   z-index: 35;
+  transition-duration: 5s;
 }
 
 #loading {
@@ -88,19 +90,18 @@ html {
   -webkit-animation: loadingsc 4s 1;
   animation-fill-mode: forwards;
   animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  /* Safari and Chrome */
-  
+  -webkit-animation-delay: 1s;  
   -webkit-animation-fill-mode: forwards;
+  transition-duration: 5s;
 }
 
 @keyframes loadingsc {
     from {
-        display: block;
+        opacity: 1;
     }
 
     to {
-        display: hide;
+        opacity: 0;
     }
 } 
 
@@ -983,7 +984,6 @@ h2 {
   flex-direction: column;
   width: 50vw;
   font-size: 0.9rem;
-  /* margin: 5% auto; */
 }
 
 .timeline__event {
@@ -1109,8 +1109,8 @@ h2 {
 
 .timeline__event:last-child:after {
   content: none;
-  justify-content: end;
 }
+
 
 @media (max-width: 786px) {
 
@@ -1877,6 +1877,91 @@ footer a {
   }
 }
 
+@media (min-width: 1173px) and (max-width: 1400px){ 
+
+  .timeline {
+    margin-left: 5rem;
+  }
+  
+  .timeline__event {
+    width: 70%;
+    font-size: 0.9rem;
+    margin: 0 0 0 29rem;
+  }
+  
+  .timeline__event__title {
+    font-size: 1rem;
+  }
+  
+  .timeline__event__content {
+    padding: 20px 40px 20px 30px;
+  }
+  
+  .timeline__event__date {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  
+  .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+    flex-basis: 40%;
+    font-size: 2rem;
+  }
+  
+  .timeline__event__icon i {
+    top: 50%;
+    left: -7.9rem;
+  }
+  
+  .timeline__event:after {
+    top: 52%;
+    left: -6.4rem;
+    /* width: 2px; */
+  }
+  
+  .timeline__event:before {
+    left: -9rem;
+    top: 50%;
+  }
+  
+  .timeline__event--type2 .timeline__event__description {
+    padding: 1%;
+  }
+  
+  .timeline__event--type2 .timeline__event__content {
+    padding: 20px 20px 20px 40px;
+  }
+  
+  .timeline__event--type2 {
+    margin: 0.5px 0 0 -10.5rem;
+  }
+  
+  .timeline__event--type2:before {
+    left: 30.5rem;
+  }
+  
+  .timeline__event--type2:after {
+    left: 33rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__date {
+    color: #af6c4f;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon i {
+    left: 31.6rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__title {
+    color: #ff8a56;
+  }
+
+}
+
 @media (min-width: 992px) and (max-width: 1172px) {
   header {
     width: 99.7%;
@@ -2104,12 +2189,13 @@ footer a {
   }
 
   .timeline {
-    margin-left: 30%;
+    margin-left: 19%;
   }
   
   .timeline__event {
-    width: 115%;
+    width: 75%;
     font-size: 0.9rem;
+    margin: 0.5rem 0 0 17rem;
   }
   
   .timeline__event__title {
@@ -2138,7 +2224,7 @@ footer a {
   
   .timeline__event:after {
     top: 52%;
-    left: -3.5rem;    
+    left: -3.5rem;
   }
   
   .timeline__event:before {
@@ -2155,15 +2241,15 @@ footer a {
   }
   
   .timeline__event--type2 {
-    margin: 1% 0 0 35%;
+    margin: 0.5rem 0 0 -13rem;
   }
   
   .timeline__event--type2:before {
-    left: -6rem;
+    left: 24rem;
   }
   
   .timeline__event--type2:after {
-    left: -3.5rem;
+    left: 26.5rem;
   }
   
   .timeline__event--type2 .timeline__event__date {
@@ -2175,7 +2261,7 @@ footer a {
   }
   
   .timeline__event--type2 .timeline__event__icon i {
-    left: -4.9rem;
+    left: 25.1rem;
   }
   
   .timeline__event--type2 .timeline__event__title {
@@ -2201,16 +2287,17 @@ footer a {
   }
 
   form {
-    margin-left: 0%;
+    /* margin-top: 0%; */
+    padding-top: 6%;
   }
 
   .wid {
     border-radius: 10px;
-    width: 143%;
-    margin-left: 3%;
-    height: 2.5em;
+    width: 90%;
+    margin-left: 17%;
+    height: 5rem;
     font-size: 1em;
-    margin-top: 12.5%;
+    margin-top: 8%;
     margin-bottom: 1.5%;
     padding: 1.5% 2% 1.5% 2%;
     border: 2px solid #aaaaaa;
@@ -2229,11 +2316,10 @@ footer a {
   }
 
   .send {
-    width: 113%;
+    width: 73%;
     height: 70px;
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-right: auto;
+    margin-top: 10%;
+    margin-left: 26%;
     font-size: 1.05em;
     padding: 0.5%;
     border: 2px solid #aaaaaa;
@@ -2530,8 +2616,8 @@ footer a {
 
   #edu {
     width: 80%;
-    margin-left: 7%;
     height: 46%;
+    margin-left: 6.5%;
     font-size: 0.8em;
   }
 
@@ -2544,9 +2630,11 @@ footer a {
 }
 
 .timeline__event {
-  width: 80%;
+  display: flex;
+  width: 70%;
   font-size: 0.9rem;
-  margin: 1% 0 0 42%;
+  margin: 0.5rem 0 0 12rem;
+  flex-direction: column;
 }
 
 .timeline__event__title {
@@ -2563,8 +2651,8 @@ footer a {
 }
 
 .timeline__event__icon {
-  border-radius: 8px 0 0 8px;
   flex-basis: 40%;
+  border-radius: 8px 8px 0 0;
   font-size: 2rem;
 }
 
@@ -2592,15 +2680,17 @@ footer a {
 }
 
 .timeline__event--type2 {
-  margin: 1% 0 0 35%;
+  margin: 0.5rem 0 0 -13rem;
+  width: 70%;
+  flex-direction: column-reverse;
 }
 
 .timeline__event--type2:before {
-  left: -6rem;
+  left: 19rem;
 }
 
 .timeline__event--type2:after {
-  left: -3.5rem;
+  left: 21.5rem;
 }
 
 .timeline__event--type2 .timeline__event__date {
@@ -2608,11 +2698,11 @@ footer a {
 }
 
 .timeline__event--type2 .timeline__event__icon {
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .timeline__event--type2 .timeline__event__icon i {
-  left: -4.9rem;
+  left: 20.1rem;
 }
 
 .timeline__event--type2 .timeline__event__title {
@@ -2635,20 +2725,21 @@ footer a {
     height: 550px;
     display: flex;
     margin-left: -7%;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   form {
     margin-left: 0%;
+    padding-top: 7%;
   }
 
   .wid {
     border-radius: 10px;
-    width: 80%;
-    margin-left: 3%;
-    height: 2.5em;
+    width: 100%;
+    margin-left: 10%;
+    height: 4rem;
     font-size: 1em;
-    margin-top: 12.5%;
+    margin-top: 7.5%;
     margin-bottom: 1.5%;
     padding: 1.5% 2% 1.5% 2%;
     border: 2px solid #aaaaaa;
@@ -2667,10 +2758,10 @@ footer a {
   }
 
   .send {
-    width: 55%;
+    width: 75%;
     height: 70px;
-    margin-top: 5%;
-    margin-left: 15%;
+    margin-top: 15%;
+    margin-left: 23%;
     margin-right: auto;
     font-size: 1.05em;
     padding: 0.5%;
@@ -2741,6 +2832,92 @@ footer a {
     margin-top: -6%;
     margin-left: 41%;
   }
+}
+
+@media (min-width: 839px) and (max-width: 878px){ 
+
+  .timeline {
+    margin-left: 5rem;
+  }
+  
+  .timeline__event {
+    width: 70%;
+    font-size: 0.9rem;
+    margin: 0 0 0 19rem;
+  }
+  
+  .timeline__event__title {
+    font-size: 1rem;
+  }
+  
+  .timeline__event__content {
+    padding: 20px 40px 20px 30px;
+  }
+  
+  .timeline__event__date {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  
+  .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+    flex-basis: 40%;
+    font-size: 2rem;
+  }
+  
+  .timeline__event__icon i {
+    top: 50%;
+    left: -4.9rem;
+  }
+  
+  .timeline__event:after {
+    top: 52%;
+    left: -3.4rem;
+    /* width: 2px; */
+  }
+  
+  .timeline__event:before {
+    left: -6rem;
+    top: 50%;
+  }
+  
+  .timeline__event--type2 .timeline__event__description {
+    padding: 1%;
+  }
+  
+  .timeline__event--type2 .timeline__event__content {
+    padding: 20px 20px 20px 40px;
+  }
+  
+  .timeline__event--type2 {
+    margin: 0 0 0 -6.5rem;
+    flex-direction: column-reverse;
+  }
+  
+  .timeline__event--type2:before {
+    left: 19.5rem;
+  }
+  
+  .timeline__event--type2:after {
+    left: 22rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__date {
+    color: #af6c4f;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon i {
+    left: 18.1rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__title {
+    color: #ff8a56;
+  }
+
 }
 
 /********** Small devices only **********/
@@ -2999,13 +3176,13 @@ footer a {
   }
 
   .timeline {
-    margin-left: 7%;
+    margin-left: 6.5%;
   }
   
   .timeline__event {
     width: 70%;
     font-size: 0.9rem;
-    margin: 0% 0 0 77%;
+    margin: 0 0 0 17rem;
   }
   
   .timeline__event__title {
@@ -3035,7 +3212,7 @@ footer a {
   .timeline__event:after {
     top: 52%;
     left: -3.4rem;
-    width: 2.5px;
+    /* width: 2px; */
   }
   
   .timeline__event:before {
@@ -3052,15 +3229,16 @@ footer a {
   }
   
   .timeline__event--type2 {
-    margin: 1% 0 0 35%;
+    margin: 0 0 0 -6rem;
+    flex-direction: column-reverse;
   }
   
   .timeline__event--type2:before {
-    left: -6rem;
+    left: 17rem;
   }
   
   .timeline__event--type2:after {
-    left: -3.5rem;
+    left: 19.5rem;
   }
   
   .timeline__event--type2 .timeline__event__date {
@@ -3068,11 +3246,11 @@ footer a {
   }
   
   .timeline__event--type2 .timeline__event__icon {
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px 8px 0 0;
   }
   
   .timeline__event--type2 .timeline__event__icon i {
-    left: -4.9rem;
+    left: 18.1rem;
   }
   
   .timeline__event--type2 .timeline__event__title {
@@ -3466,7 +3644,7 @@ footer a {
   
   .timeline__event {
     width: 115%;
-    margin: 1% 0 0 35%;
+    margin: 5% 0 0 35%;
   }
   
   .timeline__event__title {
@@ -3483,7 +3661,7 @@ footer a {
   }
   
   .timeline__event__icon {
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px 8px 0 0;
   }
   
   .timeline__event__icon i {
@@ -3514,7 +3692,7 @@ footer a {
   }
   
   .timeline__event--type2 {
-    margin: 1% 0 0 35%;
+    margin: 5% 0 0 35%;
   }
   
   .timeline__event--type2:before {
@@ -3530,7 +3708,7 @@ footer a {
   }
   
   .timeline__event--type2 .timeline__event__icon {
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px 8px 0 0;
   }
   
   .timeline__event--type2 .timeline__event__icon i {
