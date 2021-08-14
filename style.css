@@ -620,7 +620,7 @@ ion-icon {
 }
 
 #projects {
-  height: 1250px;
+  /* height: 1250px; */
   padding: 4% 4% 4% 4%;
   width: 85%;
   margin-left: auto;
@@ -1391,7 +1391,7 @@ footer a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 1.75rem;
   color: #f1f1f1;
   line-height: 52px;
   text-align: center;
@@ -1563,6 +1563,7 @@ footer a {
     float: right;
     margin-right: 10%;
     margin-top: -1%;
+    margin-bottom: 3%;
     font-weight: bold;
     background-image: linear-gradient(
       108deg,
@@ -1634,9 +1635,9 @@ footer a {
   /* projects */
 
   #projects {
-    height: 1000px;
+    height: 1002px;
     height: 25%;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
   }
 
   #p-title {
@@ -1673,10 +1674,6 @@ footer a {
     width: 80%;
     height: 46%;
     font-size: 0.8em;
-  }
-
-  .timeline {
-    margin-left: 30%;
   }
   
   .timeline__event {
@@ -1766,7 +1763,7 @@ footer a {
   #c-form {
     height: 550px;
     display: flex;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     flex-direction: row;
     /* justify-content: space-evenly; */
   }
@@ -1777,7 +1774,7 @@ footer a {
 
   .wid {
     border-radius: 10px;
-    width: 188%;
+    width: 100%;
     margin-left: 3%;
     height: 2.5em;
     font-size: 1em;
@@ -1800,10 +1797,10 @@ footer a {
   }
 
   .send {
-    width: 160%;
+    width: 80%;
     height: 70px;
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 13%;
     margin-right: auto;
     font-size: 1.05em;
     padding: 0.5%;
@@ -1825,7 +1822,7 @@ footer a {
     height: 300px;
     background-color: black;
     /* padding-bottom: 5%; */
-    font-size: 0.9em;
+    font-size: 1.75rem;
   }
 
   #fb {
@@ -1842,12 +1839,12 @@ footer a {
   #f {
     width: 110%;
     height: 1px;
-    margin-left: 42%;
+    margin-left: 10%;
     margin-right: auto;
     display: flex;
     padding-top: 6%;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   #footer-items {
@@ -1860,9 +1857,10 @@ footer a {
   }
 
   #social-footer {
-    margin-top: 4%;
+    margin-top: 2%;
+    font-size: 3rem;
     width: 100%;
-    margin-left: 15.5%;
+    margin-left: 9.5%;
   }
 
   #social-footer div a {
@@ -1872,8 +1870,96 @@ footer a {
 
   #cpy {
     width: 30%;
-    /* margin-top: 1%; */
-    margin-left: 45%;
+    margin-top: 1.5%;
+    margin-left: 44%;
+  }
+}
+
+@media (min-width: 1540px) {
+  #uic {
+    left: -7.6rem;
+}
+  
+  .timeline {
+    margin-left: 8rem;
+    width: 60%;
+  }
+
+  .timeline__event {
+    width: 70%;
+    font-size: 0.9rem;
+    margin: 0 0 0 40rem;
+  }
+  
+  .timeline__event__title {
+    font-size: 1rem;
+  }
+  
+  .timeline__event__content {
+    padding: 20px 40px 20px 30px;
+  }
+  
+  .timeline__event__date {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  
+  .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+    flex-basis: 40%;
+    font-size: 2rem;
+  }
+  
+  .timeline__event__icon i {
+    top: 50%;
+    left: -7.9rem;
+  }
+  
+  .timeline__event:after {
+    top: 52%;
+    left: -6.4rem;
+    /* width: 2px; */
+  }
+  
+  .timeline__event:before {
+    left: -9rem;
+    top: 50%;
+  }
+  
+  .timeline__event--type2 .timeline__event__description {
+    padding: 1%;
+  }
+  
+  .timeline__event--type2 .timeline__event__content {
+    padding: 20px 20px 20px 40px;
+  }
+  
+  .timeline__event--type2 {
+    margin: 0.5px 0 0 -10.5rem;
+  }
+  
+  .timeline__event--type2:before {
+    left: 41.5rem;
+  }
+  
+  .timeline__event--type2:after {
+    left: 44rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__date {
+    color: #af6c4f;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon i {
+    left: 42.6rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__title {
+    color: #ff8a56;
   }
 }
 
