@@ -116,11 +116,11 @@ body {
 
 body a {
   text-decoration: none;
-  color: #000;
 }
 
 header {
   position: fixed;
+  transform: translateY(0%) translateZ(1000px) scale(1);
   z-index: 10;
   background-color: black;
   padding-left: 7.5%;
@@ -159,10 +159,10 @@ header a,
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
+} 
 
-header a:hover,
-.topnav a:hover {
+/* .topnav a:first-child:hover, .topnav a:nth-child(2):hover, .topnav a:nth-child(3):hover, .topnav a:nth-child(4):hover */
+  header a:hover, .topnav a:hover {
   background-image: linear-gradient(
     108deg,
     #b16cea 8%,
@@ -173,11 +173,6 @@ header a:hover,
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
 }
 
 .topnav .icon {
@@ -208,7 +203,7 @@ header a:hover,
 #i-a {
   font-size: 2.5em;
   font-weight: bold;
-  margin-left: -1%;
+  margin-left: -2%;
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 0.5s ease 0.2s forwards;
@@ -219,7 +214,7 @@ header a:hover,
 }
 
 .type {
-  margin-top: 20%;
+  margin-top: 21%;
   color: rgb(3, 3, 3);
   width: 18em;
   font-size: 1.5rem;
@@ -255,6 +250,7 @@ header a:hover,
 
 #name {
   font-size: 4rem;
+  margin-left: -0.8%;
   background-image: linear-gradient(
     108deg,
     #b16cea 8%,
@@ -462,13 +458,15 @@ ion-icon {
 }
 
 #info {
-  height: 900px;
-  padding: 8% 4% 4% 4%;
+  height: 800px;
+  padding: 6% 0 0% 0%;
   display: flex;
   flex: auto;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  justify-content: space-between;
+  margin-bottom: 10%;
 }
 
 #text {
@@ -519,8 +517,8 @@ ion-icon {
 
 #img1 img {
   margin-top: 60px;
-  height: 450px;
-  width: 300px;
+  height: 500px;
+  width: 400px;
   border-radius: 10px;
   filter: drop-shadow(0 0 0.75rem #aaaaaa);
 }
@@ -568,15 +566,15 @@ ion-icon {
 }
 
 #curr span:first-child .hide {
-  left: -9%;
+  left: -16%;
 }
 
 #curr span:nth-child(2) {
-  margin-left: -1%;
+  left: -9%;
 }
 
 #curr span:nth-child(2) .hide {
-  left: 30%;
+  left: 21%;
 }
 
 #curr span:nth-child(4) {
@@ -592,15 +590,15 @@ ion-icon {
 }
 
 #curr span:nth-child(5) .hide {
-  left: -18.5%;
+  left: -25.5%;
 }
 
 #learn span:first-child .hide {
-  left: -10.7%;
+  left: -21.7%;
 }
 
 #learn span:nth-child(2) .hide {
-  left: -19%;
+  left: -28%;
 }
 
 #learn span:nth-child(3) i {
@@ -616,12 +614,12 @@ ion-icon {
 }
 
 #learn span:nth-child(5) .hide {
-  left: -10.5%;
+  left: -16.5%;
 }
 
 #projects {
-  height: 1250px;
-  padding: 4% 4% 4% 4%;
+  /* height: 1250px; */
+  padding: 4% 0 5% 0;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -640,6 +638,7 @@ font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 4%;
+  margin-left: 0%;
   width: 30%;
   font-size: 3rem;
   background-image: linear-gradient(
@@ -652,12 +651,6 @@ font-size: 3rem;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.wrapper {
-  width: 85%;
-  margin: 0 auto;
-  max-width: 80rem;
 }
 
 .cols {
@@ -683,6 +676,7 @@ font-size: 3rem;
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  /* font-size: 1.5rem; */
 }
 
 .front,
@@ -704,7 +698,7 @@ font-size: 3rem;
   height: auto;
   border-radius: 10px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .back {
@@ -768,7 +762,7 @@ font-size: 3rem;
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  /* padding: 2rem; */
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: 1px solid transparent;
@@ -869,10 +863,16 @@ font-size: 3rem;
 }
 
 .more {
-  color: #fff;
-  text-align: center;
-  width: 21%;
   border-radius: 6px;
+  width: 30%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  font-size: 1.5em;
+  padding: 0.25% 0.25% 0.25% 0.25%;
+  color: white;
+  text-align: center;
   background: linear-gradient(
     108deg,
     #b16cea 8%,
@@ -880,7 +880,6 @@ font-size: 3rem;
     #ff8a56 77%,
     #ffa84b 91%
   );
-  margin: 2% 40.5%;
   overflow: hidden;
 }
 
@@ -889,10 +888,11 @@ font-size: 3rem;
 }
 
 .more span {
+  border-radius: 25px;
   padding: 14px 0;
   font-size: 22px;
   display: block;
-  margin: 3px 3px 3px 3px;
+  margin: 3px;
   background: rgb(66, 65, 65);
   border-radius: 3px;
 }
@@ -934,6 +934,10 @@ font-size: 3rem;
   }
 }
 
+.more:hover {
+  cursor: pointer;
+}
+
 ul li {
   width: 17%;
   float: right;
@@ -963,9 +967,9 @@ h1 {
 #edu {
   width: 80%;
   margin-left: auto;
-  margin-right: auto;
-  padding: 0.5% 1% 2% 4.5%;
-  height: 1400px;
+  /* margin-right: auto; */
+  /* padding: 0.5% 1% 2% 4.5%; */
+  height: 1000px;
 }
 
 #uic {
@@ -984,7 +988,8 @@ h2 {
   flex-direction: column;
   width: 50vw;
   font-size: 0.9rem;
-  margin-left: 2%;
+  margin-left: 7%;
+  width: 60%;
 }
 
 .timeline__event {
@@ -1180,19 +1185,18 @@ h2 {
 }
 
 #contact {
-  width: 85%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  height: 800px;
-  padding: 2% 4% 3% 4%;
-  padding-top: 10%;
+  height: 700px;
+  padding: 10% 0% 0 0;
   display: flex;
   justify-content: space-between;
 }
 
 .wid {
   border-radius: 10px;
-  margin-left: 30%;
+  margin-left: 13%;
   width: 80%;
   height: 3em;
   font-size: 1em;
@@ -1224,7 +1228,7 @@ select:focus {
   border-radius: 6px;
   width: 50%;
   margin-top: 5%;
-  margin-left: 45%;
+  margin-left: 27%;
   border: 0;
   font-size: 1.5em;
   padding: 0.5% 0.5% 0.5% 0.5%;
@@ -1297,12 +1301,13 @@ select:focus {
 
 #c-form {
   display: flex;
-  height: 550px;
+  /* height: 550px; */
 }
 
 #c-form-h1 {
   text-align: left;
   font-size: 3em;
+  margin-left: -1%;
   width: 50%;
   background-image: linear-gradient(
     40deg,
@@ -1321,12 +1326,11 @@ form input {
 }
 
 footer {
-  height: 100px;
-  padding: 6% 0% 14% 0%;
-  color: white;
-  clear: right;
-  font-size: 1em;
+  width: 100%;
+  padding: 0;
+  height: 300px;
   background-color: black;
+  font-size: 1.5rem;
 }
 
 footer a {
@@ -1334,38 +1338,42 @@ footer a {
 }
 
 #fb {
-  width: 83%;
+  display: flex;
+  width: 80%;
+  padding-top: 4%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 #f {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-}
-
-#social-footer {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-evenly;
+  font-size: 0.95rem;
 }
 
 #footer-items {
   display: flex;
-  width: 20%;
+  width: 29%;
   justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+#social-footer {
+  margin-top: 5%;
+}
+
+#social-footer div a {
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 #cpy {
-  font-size: 0.6em;
-  margin-top: 5%;
-  margin-left: 45%;
+  width: 20%;
+  display: flex;
+  margin-left: auto;
   margin-right: auto;
+  margin-top: 5.5%;
+  font-size: 1rem;
 }
 
 .transition-animation {
@@ -1388,10 +1396,10 @@ footer a {
   display: inline-block;
   position: relative;
   z-index: 1;
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 56px;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 1.75rem;
   color: #f1f1f1;
   line-height: 52px;
   text-align: center;
@@ -1454,13 +1462,13 @@ footer a {
   }
 
   #i-a {
-    margin-left: -2%;
+    margin-left: -1.6%;
     font-size: 3.2rem;
   }
 
   #intro {
     height: 1000px;
-    /* width: 90%; */
+    width: 100%;
     padding: 3% 5% 2% 5%;
     font-size: 0.8em;
     /* background-image: url(images/bgw-mob.heic); */
@@ -1469,7 +1477,10 @@ footer a {
   }
 
   #self {
-    margin: 0% 0% 0% 1%;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0% 0% 0% 1%; */
     padding: 10% 0% 0% 3%;
   }
 
@@ -1494,7 +1505,7 @@ footer a {
   }
 
   #def {
-    width: 120%;
+    width: 90%;
     font-size: 2.25rem;
     margin: 0;
     margin-bottom: 3%;
@@ -1534,14 +1545,9 @@ footer a {
 
   /* about */
   #info {
-    display: flex;
     height: 950px;
-    width: 80%;
-    flex-direction: row;
-    /* margin-bottom: 20%; */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1% 1% 5% 15;
+    width: 81.5%;
+    padding: 4% 0 0 0;
     justify-content: center;
   }
 
@@ -1563,6 +1569,7 @@ footer a {
     float: right;
     margin-right: 10%;
     margin-top: -1%;
+    margin-bottom: 3%;
     font-weight: bold;
     background-image: linear-gradient(
       108deg,
@@ -1602,7 +1609,7 @@ footer a {
   }
 
   #curr span:nth-child(4) .hide {
-    left: 17%;
+    left: -3%;
   }
 
   #curr span:nth-child(4) i {
@@ -1614,7 +1621,7 @@ footer a {
   }
 
   #learn span:nth-child(3) .hide {
-    left: -24%;
+    left: -38%;
   }
 
   #learn span:nth-child(4) i {
@@ -1622,7 +1629,7 @@ footer a {
   }
 
   #learn span:nth-child(4) .hide {
-    left: -15%;
+    left: -31%;
   }
 
   .i-text {
@@ -1634,28 +1641,34 @@ footer a {
   /* projects */
 
   #projects {
-    height: 1000px;
+    /* height: 1002px; */
     height: 25%;
-    margin-bottom: 20%;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+    padding: 4% 0 0 0;
   }
 
   #p-title {
     /* width: 90%; */
     font-size: 4rem;
+    margin-left: -3%;
     /* margin-top: 5%; */
     margin-bottom: 5%;
   }
 
   .more {
     margin-top: 2%;
-    width: 50%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
   }
 
   /* education and work */
-  h1 {
+  #edu h1 {
     text-align: left;
+    margin-left: -4%;
     font-size: 4rem;
     background-image: linear-gradient(
       40deg,
@@ -1670,13 +1683,9 @@ footer a {
   }
 
   #edu {
-    width: 80%;
+    width: 75%;
     height: 46%;
     font-size: 0.8em;
-  }
-
-  .timeline {
-    margin-left: 30%;
   }
   
   .timeline__event {
@@ -1757,8 +1766,9 @@ footer a {
 
 
   #contact {
-    width: 85%;
+    width: 80%;
     margin-left: auto;
+    margin-right: auto;
     height: 760px;
     display: flex;
   }
@@ -1766,9 +1776,8 @@ footer a {
   #c-form {
     height: 550px;
     display: flex;
-    margin-left: 10%;
     flex-direction: row;
-    /* justify-content: space-evenly; */
+    justify-content: space-between;
   }
 
   form {
@@ -1777,7 +1786,7 @@ footer a {
 
   .wid {
     border-radius: 10px;
-    width: 188%;
+    width: 100%;
     margin-left: 3%;
     height: 2.5em;
     font-size: 1em;
@@ -1800,10 +1809,10 @@ footer a {
   }
 
   .send {
-    width: 160%;
+    width: 80%;
     height: 70px;
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 13%;
     margin-right: auto;
     font-size: 1.05em;
     padding: 0.5%;
@@ -1820,49 +1829,34 @@ footer a {
 
   footer {
     width: 100%;
-    /* bottom: 0; */
     padding: 0;
     height: 300px;
     background-color: black;
-    /* padding-bottom: 5%; */
-    font-size: 0.9em;
+    font-size: 1.5rem;
   }
 
   #fb {
     display: flex;
-    /* height: 400px; */
-    justify-content: space-between;
-    width: 85%;
-    padding-top: 2%;
+    width: 80%;
+    padding-top: 4%;
     margin-left: auto;
     margin-right: auto;
-    flex-direction: row;
-  }
-
-  #f {
-    width: 110%;
-    height: 1px;
-    margin-left: 42%;
-    margin-right: auto;
-    display: flex;
-    padding-top: 6%;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    font-size: 15px;
+  }
+  
+  #f {
+    font-size: 1.25rem;
   }
 
   #footer-items {
     display: flex;
-    /* margin-bottom: 10%; */
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 26%;
     justify-content: space-between;
   }
 
   #social-footer {
-    margin-top: 4%;
-    width: 100%;
-    margin-left: 15.5%;
+    margin-top: 5%;
   }
 
   #social-footer div a {
@@ -1871,13 +1865,281 @@ footer a {
   }
 
   #cpy {
-    width: 30%;
-    /* margin-top: 1%; */
-    margin-left: 45%;
+    width: 15%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5%;
   }
 }
 
-@media (min-width: 1331px) and (max-width: 1530px){ 
+@media (min-width: 1541px) {
+  #uic {
+    left: -7.6rem;
+}
+  
+  .timeline {
+    margin-left: 8rem;
+    width: 60%;
+  }
+
+  .timeline__event {
+    width: 70%;
+    font-size: 0.9rem;
+    margin: 0 0 0 40rem;
+  }
+  
+  .timeline__event__title {
+    font-size: 1rem;
+  }
+  
+  .timeline__event__content {
+    padding: 20px 40px 20px 30px;
+  }
+  
+  .timeline__event__date {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  
+  .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+    flex-basis: 40%;
+    font-size: 2rem;
+  }
+  
+  .timeline__event__icon i {
+    top: 50%;
+    left: -7.9rem;
+  }
+  
+  .timeline__event:after {
+    top: 52%;
+    left: -6.4rem;
+    /* width: 2px; */
+  }
+  
+  .timeline__event:before {
+    left: -9rem;
+    top: 50%;
+  }
+  
+  .timeline__event--type2 .timeline__event__description {
+    padding: 1%;
+  }
+  
+  .timeline__event--type2 .timeline__event__content {
+    padding: 20px 20px 20px 40px;
+  }
+  
+  .timeline__event--type2 {
+    margin: 0.5px 0 0 -10.5rem;
+  }
+  
+  .timeline__event--type2:before {
+    left: 41.5rem;
+  }
+  
+  .timeline__event--type2:after {
+    left: 44rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__date {
+    color: #af6c4f;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon i {
+    left: 42.6rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__title {
+    color: #ff8a56;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1540px){ 
+
+  #uic {
+    left: -24%;
+}
+  
+  .timeline {
+    margin-left: 11rem;
+    width: 60%;
+  }
+  
+  .timeline__event {
+    width: 70%;
+    font-size: 0.9rem;
+    margin: 0 0 0 33.5rem;
+  }
+  
+  .timeline__event__title {
+    font-size: 1rem;
+  }
+  
+  .timeline__event__content {
+    padding: 20px 40px 20px 30px;
+  }
+  
+  .timeline__event__date {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  
+  .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+    flex-basis: 40%;
+    font-size: 2rem;
+  }
+  
+  .timeline__event__icon i {
+    top: 50%;
+    left: -7.9rem;
+  }
+  
+  .timeline__event:after {
+    top: 52%;
+    left: -6.4rem;
+    /* width: 2px; */
+  }
+  
+  .timeline__event:before {
+    left: -9rem;
+    top: 50%;
+  }
+  
+  .timeline__event--type2 .timeline__event__description {
+    padding: 1%;
+  }
+  
+  .timeline__event--type2 .timeline__event__content {
+    padding: 20px 20px 20px 40px;
+  }
+  
+  .timeline__event--type2 {
+    margin: 0.5rem 0 0 -10.5rem;
+  }
+  
+  .timeline__event--type2:before {
+    left: 35rem;
+  }
+  
+  .timeline__event--type2:after {
+    left: 37.55rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__date {
+    color: #af6c4f;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon i {
+    left: 36rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__title {
+    color: #ff8a56;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1500px){ 
+
+  #uic {
+    left: -25.5%;
+}
+  
+  .timeline {
+    margin-left: 10.5rem;
+    width: 60%;
+  }
+  
+  .timeline__event {
+    width: 70%;
+    font-size: 0.9rem;
+    margin: 0 0 0 32rem;
+  }
+  
+  .timeline__event__title {
+    font-size: 1rem;
+  }
+  
+  .timeline__event__content {
+    padding: 20px 40px 20px 30px;
+  }
+  
+  .timeline__event__date {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  
+  .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+    flex-basis: 40%;
+    font-size: 2rem;
+  }
+  
+  .timeline__event__icon i {
+    top: 50%;
+    left: -7.9rem;
+  }
+  
+  .timeline__event:after {
+    top: 52%;
+    left: -6.4rem;
+    /* width: 2px; */
+  }
+  
+  .timeline__event:before {
+    left: -9rem;
+    top: 50%;
+  }
+  
+  .timeline__event--type2 .timeline__event__description {
+    padding: 1%;
+  }
+  
+  .timeline__event--type2 .timeline__event__content {
+    padding: 20px 20px 20px 40px;
+  }
+  
+  .timeline__event--type2 {
+    margin: 0.5px 0 0 -10.5rem;
+  }
+  
+  .timeline__event--type2:before {
+    left: 33.5rem;
+  }
+  
+  .timeline__event--type2:after {
+    left: 36rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__date {
+    color: #af6c4f;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon i {
+    left: 34.6rem;
+  }
+  
+  .timeline__event--type2 .timeline__event__title {
+    color: #ff8a56;
+  }
+}
+
+@media (min-width: 1331px) and (max-width: 1400px){ 
 
   #uic {
     left: -25.5%;
@@ -1973,7 +2235,7 @@ footer a {
 }
   
   .timeline {
-    margin-left: 5rem;
+    margin-left: 8rem;
   }
   
   .timeline__event {
@@ -2070,10 +2332,11 @@ footer a {
 
   #intro {
     height: 690px;
-    width: 90%;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 8% 5% 2% 5%;
     font-size: 0.8em;
-    margin-bottom: 7%;
     background-image: url(images/bgw-mob.heic);
     background-size: cover;
     background-repeat: no-repeat;
@@ -2143,12 +2406,13 @@ footer a {
   /* about */
   #info {
     display: flex;
-    height: 950px;
-    width: 83%;
+    height: 900px;
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: row;
-    margin-bottom: -15%;
-    margin-left: 7%;
-    padding: 1% 1% 5% 15;
+    margin-bottom: 0;
+    padding: 10% 0 0 0;
     justify-content: center;
   }
 
@@ -2243,12 +2507,14 @@ footer a {
 
   #projects {
     height: 25%;
+    width: 80%;
     margin-bottom: 20%;
   }
 
   #p-title {
     width: 90%;
     margin-top: 5%;
+    margin-left: -28%;
     margin-bottom: 10%;
   }
 
@@ -2276,7 +2542,7 @@ footer a {
   }
 
   #edu {
-    width: 80%;
+    width: 77%;
     height: 46%;
     font-size: 0.8em;
   }
@@ -2371,8 +2637,9 @@ footer a {
   }
 
   #contact {
-    width: 85%;
+    width: 75%;
     margin-left: auto;
+    margin-right: auto;
     height: 760px;
     display: flex;
   }
@@ -2502,13 +2769,13 @@ footer a {
   }
 
   #i-a {
-    margin-left: -2%;
+    margin-left: -3%;
   }
 
   #intro {
     height: 690px;
     width: 90%;
-    padding: 8% 5% 2% 5%;
+    padding: 12% 5% 2% 5%;
     font-size: 0.8em;
     background-image: url(images/bgw-mob.heic);
     background-size: cover;
@@ -2516,7 +2783,10 @@ footer a {
   }
 
   #self {
-    margin: 0% 0% 0% 1%;
+    /* margin: 0% 0% 0% 1%; */
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10% 0% 0% 3%;
   }
 
@@ -2579,20 +2849,21 @@ footer a {
   /* about */
   #info {
     display: flex;
-    height: 950px;
-    width: 83%;
-    flex-direction: row;
-    /* margin-bottom: 20%; */
-    margin-left: 7%;
-    padding: 1% 1% 5% 15;
-    justify-content: center;
+    height: 1150px;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    padding: 10% 0 0 0;
+    margin-bottom: 10%;
+    /* margin-left: 7%; */
   }
 
   #img1 img {
-    width: 270px;
-    height: 430px;
-    margin-left: 0%;
-    margin-top: 57%;
+    width: 300px;
+    height: 400px;
+    margin-left: 25%;
+    /* margin-top: -8%; */
   }
 
   #ab-me {
@@ -2607,8 +2878,8 @@ footer a {
     font-size: 3rem;
     width: 80%;
     float: right;
-    margin-right: 4%;
-    margin-top: -1%;
+    margin-right: 11%;
+    margin-top: 0%;
     font-weight: bold;
     background-image: linear-gradient(
       108deg,
@@ -2639,7 +2910,6 @@ footer a {
     width: 85%;
     display: flex;
     margin-left: inherit;
-    padding-bottom: 13%;
   }
 
   .ico {
@@ -2683,11 +2953,13 @@ footer a {
   #projects {
     height: 25%;
     margin-bottom: 20%;
+    width: 82%;
+    padding: 10% 0 0 0;
   }
 
   #p-title {
     width: 90%;
-    margin-top: 5%;
+    margin-left: -25%;
     margin-bottom: 10%;
   }
 
@@ -2717,7 +2989,6 @@ footer a {
   #edu {
     width: 80%;
     height: 46%;
-    margin-left: 6.5%;
     font-size: 0.8em;
   }
 
@@ -2811,31 +3082,32 @@ footer a {
 
   #c-form-h1 {
     font-size: 2.5em;
-    width: 50%;
+    width: 95%;
+    margin-left: 1%;
   }
 
   #contact {
-    width: 85%;
+    width: 79%;
+    height: 800px;
     margin-left: auto;
-    height: 760px;
+    margin-right: auto;
     display: flex;
   }
 
   #c-form {
-    height: 550px;
     display: flex;
-    margin-left: -7%;
-    /* flex-direction: column; */
+    /* margin-left: -7%; */
+    flex-direction: column;
   }
 
   form {
     margin-left: 0%;
-    padding-top: 7%;
+    /* padding-top: 7%; */
   }
 
   .wid {
     border-radius: 10px;
-    width: 100%;
+    width: 70%;
     margin-left: 10%;
     height: 4rem;
     font-size: 1em;
@@ -2858,9 +3130,8 @@ footer a {
   }
 
   .send {
-    width: 75%;
+    width: 50%;
     height: 70px;
-    margin-top: 15%;
     margin-left: 23%;
     margin-right: auto;
     font-size: 1.05em;
@@ -2929,7 +3200,7 @@ footer a {
 
   #cpy {
     width: 30%;
-    margin-top: -6%;
+    margin-top: -4%;
     margin-left: 41%;
   }
 }
@@ -3336,14 +3607,13 @@ footer a {
   }
 
   #i-a {
-    margin-left: -2%;
+    margin-left: -4%;
   }
 
   #intro {
-    height: 730px;
+    height: 650px;
     width: 90%;
-    /* margin-bottom: 5%; */
-    /* padding: 8% 5% 2% 5%; */
+    padding: 12% 5% 0 5%;
     font-size: 0.8em;
     background-image: url(images/bgw-mob.heic);
     background-size: cover;
@@ -3375,7 +3645,7 @@ footer a {
   }
 
   .type {
-    margin-top: 54%;
+    margin-top: 14rem;
     font-size: 1.56em;
     color: rgb(3, 3, 3);
     width: 18em;
@@ -3409,11 +3679,11 @@ footer a {
   /* about */
   #info {
     height: 1500px;
-    width: 83%;
+    width: 70%;
     flex-direction: column;
-    margin-bottom: 20%;
-    margin-left: 7%;
-    padding: 1% 1% 5% 15;
+    margin-bottom: 10%;
+    margin-left: 13%;
+    /* padding: 14% 0 0 0; */
   }
 
   #img1 img {
@@ -3508,18 +3778,21 @@ footer a {
   #projects {
     height: 30%;
     margin-bottom: 20%;
+    width: 80%;
+    padding: 10% 0 0 0;
   }
 
   #p-title {
     width: 90%;
     margin-top: 5%;
+    margin-left: -17%;
     margin-bottom: 10%;
   }
 
   .more {
     margin-top: 2%;
-    width: 100%;
-    margin-left: 0%;
+    width: 90%;
+    margin-left: 5%;
   }
 
   /* education and work */
@@ -3542,10 +3815,11 @@ footer a {
     width: 80%;
     height: 46%;
     font-size: 0.8em;
+    padding-left: 2%;
   }
 
   .timeline {
-    margin-left: 1%;
+    /* margin-left: 1%; */
     width: 60%;
   }
   
@@ -3630,13 +3904,14 @@ footer a {
 
   #c-form-h1 {
     font-size: 2.5em;
-    width: 100%;
+    width: 90%;
+    margin-left: 2%;
   }
 
   #contact {
-    width: 85%;
+    width: 80%;
     margin-left: auto;
-    height: 870px;
+    height: 800px;
     display: flex;
     flex-direction: column;
   }
@@ -3655,7 +3930,7 @@ footer a {
     border-radius: 10px;
     width: 90%;
     margin-left: 3%;
-    height: 2.5em;
+    height: 5rem;
     font-size: 1em;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
@@ -3676,10 +3951,10 @@ footer a {
   }
 
   .send {
-    width: 90%;
+    width: 80%;
     height: 70px;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 8%;
     font-size: 1.05em;
     padding: 0.5%;
     border: 2px solid #aaaaaa;
@@ -3716,7 +3991,7 @@ footer a {
   #f {
     width: 60%;
     height: 20px;
-    margin-left: 33%;
+    margin-left: 27%;
     margin-right: auto;
     display: flex;
     padding-top: 6%;
@@ -3725,7 +4000,7 @@ footer a {
   }
 
   #footer-items {
-    display: flex;
+    display: flex;margin-top: 5%;
     margin-bottom: 10%;
     width: 80%;
     margin-left: auto;
@@ -3734,9 +4009,9 @@ footer a {
   }
 
   #social-footer {
-    margin-top: 20%;
-    width: 90%;
-    /* margin-left: 4.5%; */
+    margin-top: 18%;
+    /* width: 90%; */
+    margin-left: 0%;
   }
 
   #social-footer div a {
@@ -3745,9 +4020,9 @@ footer a {
   }
 
   #cpy {
-    /* width: 30%; */
-    margin-top: -7%;
-    margin-left: 41%;
+    width: 40%;
+    margin-top: 1%;
+    /* margin-left: 34%; */
   }
 }
 
@@ -3758,6 +4033,7 @@ footer a {
 
   .timeline {
     width: 55%;
+    margin-left: 3.25%;
   }
   
   .timeline__event {
@@ -3810,7 +4086,7 @@ footer a {
   }
   
   .timeline__event--type2 {
-    margin: 0 0 0 -2rem;
+    margin: 0px 0 0 -2rem;
     flex-direction: column-reverse;
   }
   
@@ -3880,15 +4156,15 @@ footer a {
   }
 
   #i-a {
-    margin-left: -4%;
+    margin-left: -5%;
   }
 
   #intro {
     height: 650px;
-    width: 90%;
-    margin-left: 5%;
-    padding: 8% 5% 0% 5%;
-    /* margin-bottom: 12%; */
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4% 0% 0% 5%;
     font-size: 0.8em;
     background-image: url(images/bgw-mob.heic);
     background-size: cover;
@@ -3906,7 +4182,7 @@ footer a {
   }
 
   #s-box {
-    margin: 14% 0% 14% 1%;
+    margin: 14% 0% 14% -7%;
   }
 
   #social {
@@ -3949,30 +4225,28 @@ footer a {
     margin-top: 70%;
     color: rgb(3, 3, 3);
     width: 18em;
-    font-size: 1.3em;
+    font-size: 1.2em;
     white-space: nowrap;
     overflow: hidden;
   }
 
   /* about */
   #info {
-    height: 1312px;
-    width: 83%;
+    height: 700px;
+    width: 93%;
     flex-direction: column;
     margin-bottom: 35%;
-    margin-left: 7%;
+    margin-left: 5%;
     padding: 20% 4% 4% 10%;
   }
 
   #img1 img {
-    width: 300px;
-    height: 400px;
-    margin-left: 0;
+  display: none;
   }
 
   #ab-me {
     font-size: 1.5em;
-    margin-top: 1.2%;
+    margin-top: 1.5%;
     position: absolute;
     position: absolute;
     -webkit-text-fill-color: black;
@@ -3982,8 +4256,8 @@ footer a {
     font-size: 2em;
     width: 80%;
     float: right;
-    margin-right: 6%;
-    margin-top: -1%;
+    margin-right: 9%;
+    margin-top: 0.3%;
     font-weight: bold;
     background-image: linear-gradient(
       108deg,
@@ -4055,16 +4329,14 @@ footer a {
 
   #projects {
     height: 30%;
-    width: 90%;
+    width: 73%;
     margin-right: auto;
     margin-bottom: 20%;
     padding-top: 15%;
   }
 
   #p-title {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -13%;
     margin-top: 5%;
     margin-bottom: 10%;
   }
@@ -4076,8 +4348,9 @@ footer a {
   }
 
   /* education and work */
-  h1 {
+  #edu h1 {
     text-align: left;
+    font-size: 2.5rem;
     background-image: linear-gradient(
       40deg,
       #b16cea 8%,
@@ -4091,7 +4364,7 @@ footer a {
   }
 
   #edu {
-    width: 80%;
+    width: 75%;
     height: 1600px;
     /* margin-left: 10%; */
     margin-right: 14%;
@@ -4103,7 +4376,7 @@ footer a {
 }
 
   .timeline {
-    margin-left: 11%;
+    margin-left: 6%;
   }
   
   .timeline__event {
@@ -4191,10 +4464,11 @@ footer a {
   #c-form-h1 {
     font-size: 2.5em;
     width: 100%;
+    margin-left: 0;
   }
 
   #contact {
-    width: 90%;
+    width: 73%;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -4235,10 +4509,10 @@ footer a {
   }
 
   .send {
-    width: 90%;
+    width: 75%;
     height: 70px;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
     font-size: 1.05em;
     padding: 0.5%;
     border: 2px solid #aaaaaa;
@@ -4301,8 +4575,6 @@ footer a {
   #cpy {
     width: 50%;
     margin-top: 0%;
-    margin-left: 36%;
-    /* padding-bottom: 10%; */
   }
 }
 
@@ -4312,11 +4584,15 @@ footer a {
     width: 99.7%;
   }
 
+  #logo {
+  }
+
   .topnav a {
     display: none;
   }
   .topnav a.icon {
     float: right;
+    right: -28%;
     display: block;
   }
 
@@ -4326,13 +4602,13 @@ footer a {
 
   .topnav.responsive .icon {
     position: fixed;
-    right: 13.5%;
+    right: 9%;
     top: 0;
   }
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 
   /* intro*/
@@ -4348,14 +4624,16 @@ footer a {
   }
 
   #i-a {
-    margin-left: -6%;
+    margin-left: -7%;
     font-size: 1.8em;
   }
 
   #intro {
-    height: 690px;
-    width: 90%;
-    padding: 15% 5% 2% 5%;
+    height: 600px;
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10% 5% 0% 5%;
     font-size: 0.8em;
     background-image: url(images/bgw-mob.heic);
     background-size: cover;
@@ -4426,23 +4704,20 @@ footer a {
 
   /* about */
   #info {
-    height: 1500px;
+    height: 900px;
     width: 83%;
     flex-direction: column;
     margin-bottom: 20%;
-    margin-left: 7%;
-    padding: 1% 1% 5% 15;
+    padding: 24% 0 0 0;
   }
 
   #img1 img {
-    width: 289px;
-    height: 400px;
-    margin-left: -2%;
+  display: none;
   }
 
   #ab-me {
     font-size: 1.5em;
-    /* margin-top: 1.2%; */
+    margin-top: 1.2%;
     position: absolute;
     position: absolute;
     -webkit-text-fill-color: black;
@@ -4487,7 +4762,7 @@ footer a {
 
   .ico {
     display: flex;
-    width: 300px;
+    width: 290px;
     justify-content: space-between;
   }
 
@@ -4525,16 +4800,15 @@ footer a {
 
   #projects {
     height: 3000px;
-    width: 90%;
+    width: 75%;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 20%;
   }
 
   #p-title {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+    margin-left: 1%;
+    margin-top: 17%;
     margin-bottom: 10%;
   }
 
@@ -4562,7 +4836,9 @@ footer a {
 
   #edu {
     width: 80%;
-    margin-left: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 6%; */
     height: 1700px;
     font-size: 0.8em;
   }
@@ -4572,7 +4848,7 @@ footer a {
 }
 
   .timeline {
-    margin-left: 3%;
+    /* margin-left: 8%; */
   }
   
   .timeline__event {
@@ -4657,6 +4933,11 @@ footer a {
     justify-content: end;
   }
 
+  #c-form-h1 {
+    font-size: 2.25em;
+    width: 90%;
+    margin-left: 2%;
+  }
 
   #c-form {
     height: 550px;
@@ -4696,7 +4977,7 @@ footer a {
     width: 90%;
     height: 70px;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 3%;
     font-size: 1.05em;
     padding: 0.5%;
     color: white;
@@ -4758,7 +5039,7 @@ footer a {
 
   #social-footer {
     margin-top: 20%;
-    width: 100%;
+    /* width: 100%; */
     margin-left: -4%;
   }
 
@@ -4768,9 +5049,9 @@ footer a {
   }
 
   #cpy {
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 26%;
+    width: 52%;
+    margin-top: 2%;
+    font-size: 0.8rem;
   }
 
   footer {
@@ -4784,6 +5065,68 @@ footer a {
   }
 }
 
+
+@media (max-width: 498px) and (min-width: 320px) {
+  
+  #i-a {
+    margin-left: -9%;
+  }
+
+  #s-box {
+    margin-left:-9%;
+  }
+
+  #f {
+      width: 76%;
+  }
+
+  #info {
+   height: 1000px; 
+   margin-bottom: 20%;
+  }
+
+  .info-sub {
+    margin-top:3%;
+  }
+
+  #p-title {
+    font-size:2.5rem;
+  }
+
+  .more {
+    margin-left:0%
+  }
+
+h1 {
+  font-size:2.18rem;
+}
+
+.timeline__event__date {
+  font-size:1.25rem;
+}
+
+#c-form-h1 {
+  font-size:2.7rem;
+}
+
+#f {
+  font-size:0.8rem;
+}
+
+.icon {
+  font-size:1.5rem;
+}
+
+#social-footer {
+  margin-left: -15%;
+}
+
+#cpy {
+  width:60%;
+}
+
+
+}
 @media screen and (max-width: 64rem) {
   .col {
     width: calc(33.333333% - 2rem);

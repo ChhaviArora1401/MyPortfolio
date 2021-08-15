@@ -1,3 +1,4 @@
+
 //Overlay fade out on load
 // $(window).load(function (i) {
 //     $('#loading').delay(10).fadeOut('slow');
@@ -57,18 +58,3 @@ function close() {
     }
 }
 
-// $(document).ready(function () {
-//     console.log('ready');
-//     $('#lorem-ipsum-wrapper').css('display', 'none');
-
-//     $('#content').on("focus", function (event) {
-//         $('#lorem-ipsum-wrapper').css('display', 'block');
-//     });
-
-//     $('#content').on("blur", function () {
-//         $('#lorem-ipsum-wrapper').css("display", "none");
-//     });
-//     $('#lorem-ipsum-wrapper').on("click", function () {
-//         $(this).css("display", "block");
-//     });
-// });
