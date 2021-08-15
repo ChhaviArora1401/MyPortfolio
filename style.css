@@ -3571,6 +3571,7 @@ footer a {
   .topnav.responsive {
     margin-right: 33%;
     margin-top: 20%;
+    margin-bottom: 5%;
   }
   .topnav.responsive .icon {
     position: fixed;
@@ -4578,6 +4579,7 @@ footer a {
   .topnav a.icon {
     float: right;
     right: -28%;
+    margin-top: -5%;
     display: block;
   }
 
@@ -4824,8 +4826,8 @@ footer a {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    /* margin-left: 6%; */
     height: 1700px;
+    margin-bottom: 20%;
     font-size: 0.8em;
   }
 
