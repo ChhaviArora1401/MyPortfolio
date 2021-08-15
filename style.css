@@ -1776,6 +1776,7 @@ footer a {
   #c-form {
     height: 550px;
     display: flex;
+    /* margin-left: 10%; */
     flex-direction: row;
     justify-content: space-between;
   }
@@ -2144,7 +2145,6 @@ footer a {
   #uic {
     left: -25.5%;
 }
-  
   .timeline {
     margin-left: 8rem;
     width: 60%;
@@ -2229,7 +2229,6 @@ footer a {
 }
 
 @media (min-width: 1173px) and (max-width: 1330px){ 
-
   #uic {
     left: -25.5%;
 }
@@ -2327,7 +2326,7 @@ footer a {
   }
 
   #i-a {
-    margin-left: -2%;
+    margin-left: -3%;
   }
 
   #intro {
@@ -2343,7 +2342,10 @@ footer a {
   }
 
   #self {
-    margin: 0% 0% 0% 1%;
+    /* margin: 0% 0% 0% 1%; */
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10% 0% 0% 3%;
   }
 
@@ -2434,8 +2436,8 @@ footer a {
     font-size: 3rem;
     width: 80%;
     float: right;
-    margin-right: 4%;
-    margin-top: -1%;
+    margin-right: 11%;
+    margin-top: 0%;
     font-weight: bold;
     background-image: linear-gradient(
       108deg,
@@ -2464,7 +2466,7 @@ footer a {
 
   #text {
     width: 90%;
-    padding-bottom: 13%;
+    padding-bottom: 13%; 
   }
 
   .ico {
@@ -2509,6 +2511,8 @@ footer a {
     height: 25%;
     width: 80%;
     margin-bottom: 20%;
+    width: 82%;
+    padding: 10% 0 0 0;
   }
 
   #p-title {
@@ -2633,7 +2637,8 @@ footer a {
 
   #c-form-h1 {
     font-size: 2.5em;
-    width: 50%;
+    width: 95%;
+    margin-left: 1%;
   }
 
   #contact {
@@ -2645,7 +2650,6 @@ footer a {
   }
 
   #c-form {
-    height: 550px;
     display: flex;
     flex-direction: row;
   }
@@ -4097,19 +4101,7 @@ footer a {
   .timeline__event--type2:after {
     left: 15.5rem;
   }
-  
-  .timeline__event--type2 .timeline__event__date {
-    color: #af6c4f;
-  }
-  
-  .timeline__event--type2 .timeline__event__icon {
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .timeline__event--type2 .timeline__event__icon i {
-    left: 14.1rem;
-  }
-  
+
   .timeline__event--type2 .timeline__event__title {
     color: #ff8a56;
   }
@@ -4583,10 +4575,7 @@ footer a {
   header {
     width: 99.7%;
   }
-
-  #logo {
-  }
-
+  
   .topnav a {
     display: none;
   }
@@ -4717,7 +4706,7 @@ footer a {
 
   #ab-me {
     font-size: 1.5em;
-    margin-top: 1.2%;
+    /* margin-top: 1.2%; */
     position: absolute;
     position: absolute;
     -webkit-text-fill-color: black;
@@ -4847,10 +4836,6 @@ footer a {
     left: -35.5%;
 }
 
-  .timeline {
-    /* margin-left: 8%; */
-  }
-  
   .timeline__event {
     width: 115%;
     margin: 5% 0 0 35%;
