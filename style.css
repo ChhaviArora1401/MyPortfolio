@@ -5051,8 +5051,7 @@ footer a {
 }
 
 
-@media (max-width: 498px) and (min-width: 320px) {
-  
+@media screen and (min-width: 320px) {  
   #i-a {
     margin-left: -9%;
   }
@@ -5094,10 +5093,6 @@ h1 {
   font-size:2.7rem;
 }
 
-#f {
-  font-size:0.8rem;
-}
-
 .icon {
   font-size:1.5rem;
 }
@@ -5109,7 +5104,6 @@ h1 {
 #cpy {
   width:60%;
 }
-
 
 }
 @media screen and (max-width: 64rem) {
