@@ -19,24 +19,24 @@
 //     prevScrollpos = currentScrollPos;
 // }
 
-var mybutton = document.getElementById("myBtn");
+// var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-}
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         mybutton.style.display = "block";
+//     } else {
+//         mybutton.style.display = "none";
+//     }
+// }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
 
 
 function myFunction() {
@@ -57,4 +57,20 @@ function close() {
         }, 100);
     }
 }
+
+// const navlink = document.querySelectorAll(".navbar a");
+// navlink.forEach(elem => elem.addEventListener("click", smoothscroll));
+// function smoothscroll(event) {
+//     event.preventDefault();
+//     const targetId = event.currentTarget.getAttribute("href");
+//     window.scrollTo({
+//         top: document.querySelector(targetId).offsetTop,
+//         behavior: "smooth"
+//     })
+// }
+
+
+const scroll = new SmoothScroll('.navbar span a[href*="#"], .topnav a[href*="#"], .footer-items a[href*="#"], .mybtn a[href*="#"]', {
+    speed: 1000
+});
 

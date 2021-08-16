@@ -21,41 +21,46 @@
 </head>
 
 <script>
-    window.onload = function () { hide() };
-    var mybutton = document.getElementById("myBtn");
+    // window.onload = function () { hide() };
+    // var mybutton = document.getElementById("my");
 
-    function hide() {
-        mybutton.style.display = "none";
-    }
+    // function hide() {
+    //     mybutton.style.display = "none";
+    // }
 
 </script>
 
 <body>
 
-    <!-- <div id="loading" class="loadingm">
+    <!-- <div id="loading">
         <div id="overw" class="over"> Welcome </div>
-    </div> -->
+    </div>
 
-    <header id="navbar">
-        <nav>
-            <span id="logo"> <a href="#">Chhavi</a> </span>
+    <script>
+        setTimeout(function () {
+            var load = document.getElementById("loading");
+            load.remove();
+        }, 10000);
+    </script> -->
+
+    <header>
+        <nav class="navbar">
+            <span class="logo"> <a href="#">Chhavi</a> </span>
             <div class="topnav" id="myTopnav">
-                <span>
-                    <a href="#info">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="docs/Chhavi_Arora_Resume.pdf" target="_blank">CV</a>
-                    <a href="#contact">Contact</a>
-                    <a href="javascript:void(0);" class="icon" id="bars" onclick="myFunction()"
-                        onblur="setTimeout(function() {myFunction();},400);">
-                        &#9776;
-                    </a>
-                </span>
+                <a href="#info">About</a>
+                <a href="#projects">Projects</a>
+                <a href="docs/Chhavi_Arora_Resume.pdf" target="_blank">CV</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" id="bars" onclick="myFunction()"
+                    onblur="setTimeout(function() {myFunction();},400);">
+                    &#9776;
+                </a>
             </div>
         </nav>
     </header>
 
     <div id="main-content">
-        <div class="container">
+        <section class="container">
             <div id="intro">
                 <div id="self">
                     <span><button id="dark" style="border: 0ch; background-color: transparent;">
@@ -104,15 +109,18 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
             <div id="info">
                 <div id="text">
                     <div>
-                        <a href="#intro" style="cursor: pointer;"> <button onload="hide()" onclick="topFunction()"
-                                id="myBtn" style="display: block;"><i style="color:white;"
-                                    class="fas fa-arrow-circle-up" aria-hidden="true"></i></button></a>
+                        <div class="mybtn">
+                            <a href="#intro">
+                                <div id="myBtn" style="display: block;"><i style="color:white;"
+                                        class="fas fa-arrow-circle-up" aria-hidden="true"></i></div>
+                            </a>
+                        </div>
                         <span id="ab-me"><i class="fas fa-user" aria-hidden="true"></i></span>
                         <span class="info-sub"> About Me</span>
                         <br>
@@ -178,9 +186,9 @@
                     <img src="images/a.jpg" height="500px" width="400px">
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
             <div id="projects">
 
                 <div id="p-title"><span id="p-icon"><i class="far fa-file-code"></i></span> Projects</div>
@@ -205,7 +213,8 @@
                         </div>
                         <div class="col" ontouchstart="this.classList.toggle('hover');">
                             <div class="p-tiles">
-                                <a href="" target="_blank">
+                                <a href="https://chhaviarora1401.github.io/Restaurant-Website/index.html"
+                                    target="_blank">
                                     <div class="front" style="background-image:url(images/restraunt.png);">
                                         <div class="inner">
                                             <p>Restraunt Site</p>
@@ -325,9 +334,9 @@
                             on Github.</span></a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
             <div id="edu">
                 <h1> <span id="edu-icon"><i class="fas fa-university"></i></span> Educational Background <br>
                     &amp Work Experience</h1>
@@ -421,28 +430,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="timeline__event animated fadeInUp timeline__event--type1">
-                        <div class="timeline__event__icon">
-                            <i class="fas fa-school"></i>
-                            <div class="timeline__event__date">
-                                Apr'16- Apr'17
-                            </div>
-                        </div>
-                        <div class="timeline__event__content">
-                            <div class="timeline__event__title">
-                                <b>10<sup style="text-transform: lowercase;
-                                                            font-size: 0.7em;">th</sup> Standard</b>
-                            </div>
-                            <div class="timeline__event__description">
-                                <p>Brilliant's Convent School <br>CBSE </p>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- <div class="container">
+        <!-- <section class="container">
             <div class="testimonials">
                 <div class="testmon" style="display: flex; justify-content: space-between;">
                     <div id="image">
@@ -467,9 +459,9 @@
                 </div>
 
             </div>
-        </div> -->
+        </section> -->
 
-        <div class="container">
+        <section class="container">
             <div id="contact">
                 <div id="c-form">
                     <h1 id="c-form-h1">Ready to make
@@ -501,32 +493,6 @@
                             border: 4px solid red;
                             text-align: center;
                             box-shadow: 0 10px 35px 0 rgb(0 0 0 / 20%), 0 20px 40px 0 rgb(0 0 0 / 19%);
-                            animation: signup-response 0.5s 1;
-                            -webkit-animation: signup-response 0.5s 1;
-                            animation-fill-mode: forwards;
-                            animation-delay: 2s;
-                            -webkit-animation-delay: 1s;
-                            -webkit-animation-fill-mode: forwards;
-                        }
-
-                        @keyframes signup-response {
-                            from {
-                                opacity: 1;
-                            }
-
-                            to {
-                                opacity: 0;
-                            }
-                        }
-
-                        @-webkit-keyframes signup-response {
-                            from {
-                                opacity: 1;
-                            }
-
-                            to {
-                                opacity: 0;
-                            }
                         }
 
                         .success {
@@ -544,37 +510,11 @@
                             border: 4px solid #04AA6D;
                             text-align: center;
                             box-shadow: 0 10px 35px 0 rgb(0 0 0 / 20%), 0 20px 40px 0 rgb(0 0 0 / 19%);
-                            animation: signup-response 0.5s 1;
-                            -webkit-animation: signup-response 0.5s 1;
-                            animation-fill-mode: forwards;
-                            animation-delay: 2s;
-                            -webkit-animation-delay: 1s;
-                            -webkit-animation-fill-mode: forwards;
                         }
 
                         .send-i {
                             font-size: 5rem;
                             margin-top: 14%;
-                        }
-
-                        @keyframes signup-response {
-                            from {
-                                opacity: 1;
-                            }
-
-                            to {
-                                opacity: 0;
-                            }
-                        }
-
-                        @-webkit-keyframes signup-response {
-                            from {
-                                opacity: 1;
-                            }
-
-                            to {
-                                opacity: 0;
-                            }
                         }
                     </style>
 
@@ -600,46 +540,51 @@
                                 status.className = "error";
                                 status.innerHTML = "Oops! There was a problem. Try again!! <br> <b><i class='fas fa-exclamation-triangle send-i'></i> </b>";
                             });
+                            setTimeout(function () {
+                                status.remove();
+                                // status.classList.remove("success");
+                            }, 4000);
                         }
                         form.addEventListener("submit", handleSubmit)
                     </script>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <footer>
-        <div id="fb">
-            <div id="f">
-                <span>
-                    <a href="mailto: chhaviarora1401@gmail.com"><i class="far fa-envelope"></i>
-                        Chhaviarora1401@gmail.com</a>
-                </span>
+        <footer>
+            <div id="fb">
+                <div id="f">
+                    <span>
+                        <a href="mailto: chhaviarora1401@gmail.com"><i class="far fa-envelope"></i>
+                            Chhaviarora1401@gmail.com</a>
+                    </span>
+                </div>
+                <div id="social-footer">
+                    <ul class="icon-effect icon-effect-1a">
+                        <li><a href="https://github.com/ChhaviArora1401" target="_blank" class="icon"><i
+                                    class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank" class="icon"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto: chhaviarora1401@gmail.com" class="icon"><i class="fas fa-at"></i></a></li>
+                        <li><a href="https://app.slack.com/client/TCYEB44S2/D02973WGV7E/user_profile/U022B11NY23"
+                                class="icon"><i class="fab fa-slack-hash"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <span>
+                        <a href="#info">About</a>
+                    </span>
+                    <span>
+                        <a href="https://twitter.com/chhaviarora1496">Twitter</a>
+                    </span>
+                </div>
             </div>
-            <div id="social-footer">
-                <ul class="icon-effect icon-effect-1a">
-                    <li><a href="https://github.com/ChhaviArora1401" target="_blank" class="icon"><i
-                                class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/chhaviarora1401/" target="_blank" class="icon"><i
-                                class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="mailto: chhaviarora1401@gmail.com" class="icon"><i class="fas fa-at"></i></a></li>
-                    <li><a href="https://app.slack.com/client/TCYEB44S2/D02973WGV7E/user_profile/U022B11NY23"
-                            class="icon"><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
-            </div>
-            <div id="footer-items">
-                <span>
-                    <a href="#info">About</a>
-                </span>
-                <span>
-                    <a href="https://twitter.com/chhaviarora1496">Twitter</a>
-                </span>
-            </div>
-        </div>
-        <div id="cpy"><a href="https://github.com/ChhaviArora1401" target="_blank">&copy; Coded by Chhavi Arora,
-                2021</a> </div>
-    </footer>
-    <script src="js/script.js"></script>
+            <div id="cpy"><a href="https://github.com/ChhaviArora1401" target="_blank">&copy; Coded by Chhavi Arora,
+                    2021</a> </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

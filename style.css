@@ -4,22 +4,22 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
-#overw {
+/* #overw {
   width: 100px;
   height: 100px;
   left: 600px;
   top: 200px;
-  background-color: rgb(253, 252, 252);
+  background-color: rgb(201, 37, 37);
   position: absolute;
   color: rgb(109, 83, 83);
   animation-name: example;
-  animation-duration: 1s;
+  animation-duration: 3s;
   transition-duration: 5s;
-  animation-delay: 1s;
+  animation-delay: 0s;
   z-index: 35;
 }
 
@@ -70,7 +70,7 @@ html {
   position: absolute;
   color: rgb(109, 83, 83);
   animation-name: example;
-  animation-duration: 1s;
+  animation-duration: 3s;
   z-index: 35;
   transition-duration: 5s;
 }
@@ -83,16 +83,15 @@ html {
   top: 0;
   left: 0;
   text-align: center;
-  animation-name: exam;
-  background-color: white;
+  background-color: rgba(60, 48, 165, 0.315);
   z-index: 30;
-  animation: loadingsc 4s 1;
-  -webkit-animation: loadingsc 4s 1;
+  animation: loadingsc 1s 1;
+  -webkit-animation: loadingsc 1s 1;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
   -webkit-animation-fill-mode: forwards;
-  transition-duration: 5s;
+  transition-duration: 8s;
 }
 
 @keyframes loadingsc {
@@ -103,7 +102,7 @@ html {
   to {
     opacity: 0;
   }
-}
+} */
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -128,7 +127,7 @@ header {
   box-shadow: 0px 10px 10px #aaaaaa;
 }
 
-#logo {
+.logo {
   font-family: "Cedarville Cursive", cursive;
   text-decoration: none;
   font-size: 25px;
@@ -479,10 +478,6 @@ ion-icon {
 
 .space {
   height: 10px;
-}
-
-.hr-t {
-  margin-right: -35%;
 }
 
 .s {
@@ -863,6 +858,7 @@ ion-icon {
 .more {
   border-radius: 6px;
   width: 30%;
+  cursor: pointer;
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
@@ -896,10 +892,11 @@ ion-icon {
 }
 
 .more:hover {
+  animation: play 0.5s ease-in infinite;
   -webkit-animation: play 0.5s ease-in infinite;
 }
 
-@-webkit-keyframes play {
+@keyframes play {
   0% {
     background-position: 0px;
   }
@@ -930,10 +927,6 @@ ion-icon {
   100% {
     background-position: -390px;
   }
-}
-
-.more:hover {
-  cursor: pointer;
 }
 
 ul li {
@@ -1224,9 +1217,10 @@ select:focus {
 
 .send {
   border-radius: 6px;
-  width: 50%;
+  width: 60%;
   margin-top: 5%;
-  margin-left: 27%;
+  cursor: pointer;
+  margin-left: 24%;
   border: 0;
   font-size: 1.5em;
   padding: 0.5% 0.5% 0.5% 0.5%;
@@ -1257,44 +1251,8 @@ select:focus {
 }
 
 .send:hover {
+  animation: play 0.5s ease-in infinite;
   -webkit-animation: play 0.5s ease-in infinite;
-}
-
-@-webkit-keyframes play {
-  0% {
-    background-position: 0px;
-  }
-  10% {
-    background-position: -50px;
-  }
-  20% {
-    background-position: -70px;
-  }
-  30% {
-    background-position: -110px;
-  }
-  40% {
-    background-position: -160px;
-  }
-  50% {
-    background-position: -190px;
-  }
-  60% {
-    background-position: -230px;
-  }
-  70% {
-    background-position: -280px;
-  }
-  90% {
-    background-position: -310px;
-  }
-  100% {
-    background-position: -390px;
-  }
-}
-
-.send:hover {
-  cursor: pointer;
 }
 
 #c-form {
@@ -1349,7 +1307,7 @@ footer a {
   font-size: 1rem;
 }
 
-#footer-items {
+.footer-items {
   display: flex;
   width: 29%;
   justify-content: space-between;
@@ -1522,23 +1480,8 @@ footer a {
 
   #myBtn {
     right: 10%;
-    z-index: 10;
     bottom: 6%;
     cursor: pointer;
-    position: fixed;
-    padding: 0.5%;
-    height: 50px;
-    width: 50px;
-    border: 0;
-    border-radius: 60px;
-    font-size: 1.25em;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
   }
 
   /* about */
@@ -1585,14 +1528,9 @@ footer a {
     font-size: 0.9em;
   }
 
-  #vl {
+  /* #vl {
     visibility: hidden;
-  }
-
-  .hr-t {
-    visibility: visible;
-    width: 80%;
-  }
+  } */
 
   #text {
     width: 90%;
@@ -1845,7 +1783,7 @@ footer a {
     font-size: 1.25rem;
   }
 
-  #footer-items {
+  .footer-items {
     display: flex;
     width: 26%;
     justify-content: space-between;
@@ -2375,23 +2313,8 @@ footer a {
 
   #myBtn {
     right: 10%;
-    z-index: 10;
     bottom: 6%;
     cursor: pointer;
-    position: fixed;
-    padding: 0.5%;
-    height: 50px;
-    width: 50px;
-    border: 0;
-    border-radius: 60px;
-    font-size: 1.25em;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
   }
 
   /* about */
@@ -2426,7 +2349,7 @@ footer a {
     width: 80%;
     float: right;
     margin-right: 4%;
-    margin-top: -1%;
+    margin-top: 0%;
     font-weight: bold;
     background-image: linear-gradient(
       108deg,
@@ -2444,14 +2367,10 @@ footer a {
     font-size: 0.8em;
   }
 
-  #vl {
+  /* #vl {
     visibility: hidden;
-  }
+  } */
 
-  .hr-t {
-    visibility: visible;
-    width: 80%;
-  }
 
   #text {
     width: 90%;
@@ -2719,7 +2638,7 @@ footer a {
     font-size: 15px;
   }
 
-  #footer-items {
+  .footer-items {
     display: flex;
     /* margin-bottom: 10%; */
     width: 80%;
@@ -2815,43 +2734,25 @@ footer a {
 
   #myBtn {
     right: 10%;
-    z-index: 10;
     bottom: 6%;
     cursor: pointer;
-    position: fixed;
-    padding: 0.5%;
-    height: 50px;
-    width: 50px;
-    border: 0;
-    border-radius: 60px;
-    font-size: 1.25em;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
   }
 
   /* about */
   #info {
     display: flex;
-    height: 1150px;
+    height: 750px;
     width: 93%;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
     padding: 10% 0 0 0;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
     /* margin-left: 7%; */
   }
 
   #img1 img {
-    width: 300px;
-    height: 400px;
-    margin-left: 25%;
-    /* margin-top: -8%; */
+  display: none;
   }
 
   #ab-me {
@@ -2887,11 +2788,6 @@ footer a {
 
   #vl {
     visibility: hidden;
-  }
-
-  .hr-t {
-    visibility: visible;
-    width: 80%;
   }
 
   #text {
@@ -3166,7 +3062,7 @@ footer a {
     font-size: 15px;
   }
 
-  #footer-items {
+  .footer-items {
     display: flex;
     margin-bottom: 10%;
     width: 80%;
@@ -3646,28 +3542,13 @@ footer a {
 
   #myBtn {
     right: 10%;
-    z-index: 10;
     bottom: 6%;
     cursor: pointer;
-    position: fixed;
-    padding: 0.5%;
-    height: 50px;
-    width: 50px;
-    border: 0;
-    border-radius: 60px;
-    font-size: 1.25em;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
   }
 
   /* about */
   #info {
-    height: 1500px;
+    height: 800px;
     width: 70%;
     flex-direction: column;
     margin-bottom: 10%;
@@ -3676,9 +3557,7 @@ footer a {
   }
 
   #img1 img {
-    width: 400px;
-    height: 500px;
-    /* margin-left: 15%; */
+  display: none;
   }
 
   #ab-me {
@@ -3714,11 +3593,6 @@ footer a {
 
   #vl {
     visibility: hidden;
-  }
-
-  .hr-t {
-    visibility: visible;
-    width: 80%;
   }
 
   #text {
@@ -3987,7 +3861,7 @@ footer a {
     font-size: 15px;
   }
 
-  #footer-items {
+  .footer-items {
     display: flex;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -4191,23 +4065,8 @@ footer a {
 
   #myBtn {
     right: 10%;
-    z-index: 10;
     bottom: 6%;
     cursor: pointer;
-    position: fixed;
-    padding: 0.5%;
-    height: 50px;
-    width: 50px;
-    border: 0;
-    border-radius: 60px;
-    font-size: 1.25em;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
   }
 
   .type {
@@ -4266,11 +4125,6 @@ footer a {
 
   #vl {
     visibility: hidden;
-  }
-
-  .hr-t {
-    visibility: visible;
-    width: 80%;
   }
 
   #text {
@@ -4541,7 +4395,7 @@ footer a {
     font-size: 15px;
   }
 
-  #footer-items {
+  .footer-items {
     display: flex;
     margin-bottom: 10%;
     width: 80%;
@@ -4659,23 +4513,8 @@ footer a {
 
   #myBtn {
     right: 10%;
-    z-index: 10;
     bottom: 6%;
     cursor: pointer;
-    position: fixed;
-    padding: 0.5%;
-    height: 50px;
-    width: 50px;
-    border: 0;
-    border-radius: 60px;
-    font-size: 1.25em;
-    background-image: linear-gradient(
-      108deg,
-      #b16cea 8%,
-      #ff5e69 40%,
-      #ff8a56 77%,
-      #ffa84b 91%
-    );
   }
 
   .type {
@@ -4735,11 +4574,6 @@ footer a {
 
   #vl {
     visibility: hidden;
-  }
-
-  .hr-t {
-    visibility: visible;
-    width: 80%;
   }
 
   #text {
@@ -5012,7 +4846,7 @@ footer a {
     font-size: 15px;
   }
 
-  #footer-items {
+  .footer-items {
     display: flex;
     margin-bottom: 10%;
     width: 80%;
