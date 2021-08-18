@@ -4,9 +4,23 @@
   box-sizing: border-box;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
+html {
+     scroll-padding-top: 7rem;
+    /* scroll-behavior: smooth; */
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 5rem;
+}
 
 /* #overw {
   width: 100px;
