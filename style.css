@@ -441,10 +441,9 @@ ion-icon {
   bottom: 6%;
   cursor: pointer;
   position: fixed;
-  padding: 0.5%;
-  height: 50px;
-  width: 50px;
-  border: 0;
+  padding: 1% 1% 1% 1%;
+  height: 4rem;
+  width: 4rem;
   border-radius: 60px;
   font-size: 1.25em;
   background-image: linear-gradient(

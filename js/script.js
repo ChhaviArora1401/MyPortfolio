@@ -71,6 +71,6 @@ function close() {
 
 
 const scroll = new SmoothScroll('.navbar span a[href*="#"], .topnav a[href*="#"], .footer-items a[href*="#"], .mybtn a[href*="#"]', {
-    speed: 1000
+    speed: 200
 });
 
