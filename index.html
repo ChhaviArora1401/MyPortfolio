@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA
-</title>
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
@@ -21,28 +21,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<script>
-    // window.onload = function () { hide() };
-    // var mybutton = document.getElementById("my");
-
-    // function hide() {
-    //     mybutton.style.display = "none";
-    // }
-
-</script>
-
 <body>
-
-    <!-- <div id="loading">
-        <div id="overw" class="over"> Welcome </div>
-    </div>
-
-    <script>
-        setTimeout(function () {
-            var load = document.getElementById("loading");
-            load.remove();
-        }, 10000);
-    </script> -->
 
     <header>
         <nav class="navbar">
@@ -65,7 +44,6 @@
             <div id="intro">
                 <div id="self">
                     <span><button id="dark" style="border: 0ch; background-color: transparent;">
-                            <!-- <i class="far fa-lightbulb"></i></button></span> -->
                         </button></span>
                     <span id="i-a">
                         Hey! I am
@@ -437,33 +415,6 @@
             </div>
         </section>
 
-        <!-- <section class="container">
-            <div class="testimonials">
-                <div class="testmon" style="display: flex; justify-content: space-between;">
-                    <div id="image">
-                        <h1 style="font-size: 25px; text-align: left;   color: orange;">Testimonials</h1>
-                        <h1 style="font-size: 35px; text-align: left;">Word on The Street</h1>
-                        <img src="images/abou.jpg" height=" 300px" width="300px" />
-                    </div>
-                    <div id="comment">
-                        <i class="fas fa-quote-left quotes"></i><br>
-                        Lorem ipsum dolor sit amet, quo ei simul congue exerci, <br>
-                        ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. <br>
-                        Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo <br>
-                        iusto primis ea eam.<br>
-                        <i style="margin-left: 30%; margin-top: 4%;" class="fas fa-quote-right quotes"></i>
-                        <small style="font-size: 13px; margin-top: 10%;">Lorem ipsum <br>
-                            dolor sit amet</small>
-                    </div>
-                </div>
-                <div id="navi">
-                    <a href="??" class="previous">&laquo;Previous</a>
-                    <a href="??" class="next">Next&raquo;</a>
-                </div>
-
-            </div>
-        </section> -->
-
         <section class="container">
             <div id="contact">
                 <div id="c-form">
@@ -482,43 +433,23 @@
 
                     <style>
                         .error {
-                            background-color: #ffffff;
+                            background-color: #ff0000;
                             z-index: 3;
-                            height: 24rem;
-                            margin-left: 8%;
-                            font-size: 2.25rem;
-                            position: absolute;
-                            width: 24rem;
-                            margin-top: -23%;
-                            border-radius: 25px;
-                            padding: 3% 1% 1% 1%;
-                            color: red;
-                            border: 4px solid red;
-                            text-align: center;
-                            box-shadow: 0 10px 35px 0 rgb(0 0 0 / 20%), 0 20px 40px 0 rgb(0 0 0 / 19%);
+                            color: #ffffff;
+                            padding: 1% 1.5%;
                         }
 
                         .success {
-                            background-color: #ffffff;
+                            background-color: #04AA6D;
                             z-index: 3;
-                            height: 24rem;
-                            margin-left: 8%;
-                            font-size: 2.25rem;
-                            position: absolute;
-                            width: 24rem;
-                            margin-top: -23%;
-                            border-radius: 25px;
-                            padding: 3% 1% 1% 1%;
-                            color: #04AA6D;
-                            border: 4px solid #04AA6D;
-                            text-align: center;
-                            box-shadow: 0 10px 35px 0 rgb(0 0 0 / 20%), 0 20px 40px 0 rgb(0 0 0 / 19%);
+                            color: #ffffff;
+                            padding: 1% 1.5%;
                         }
 
-                        .send-i {
+                        /* .send-i {
                             font-size: 5rem;
                             margin-top: 14%;
-                        }
+                        } */
                     </style>
 
                     <!--Place this script at the end of the body tag -->
@@ -536,17 +467,21 @@
                                     'Accept': 'application/json'
                                 }
                             }).then(response => {
-                                status.className = "success";
-                                status.innerHTML = "Thanks for reaching out to me! <br> <b><i class='far fa-check-circle send-i'></i> </b>";
-                                form.reset()
+                                if (response.ok) {
+                                    status.innerHTML = "Thanks for your submission!";
+                                    form.reset()
+                                } else {
+                                    response.json().then(data => {
+                                        if (Object.hasOwn(data, 'errors')) {
+                                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                                        } else {
+                                            status.innerHTML = "Oops! There was a problem submitting your form"
+                                        }
+                                    })
+                                }
                             }).catch(error => {
-                                status.className = "error";
-                                status.innerHTML = "Oops! There was a problem. Try again!! <br> <b><i class='fas fa-exclamation-triangle send-i'></i> </b>";
+                                status.innerHTML = "Oops! There was a problem submitting your form"
                             });
-                            setTimeout(function () {
-                                status.remove();
-                                // status.classList.remove("success");
-                            }, 4000);
                         }
                         form.addEventListener("submit", handleSubmit)
                     </script>
